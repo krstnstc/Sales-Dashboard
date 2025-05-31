@@ -1,0 +1,996 @@
+CustomerID,Recency,Frequency,Monetary,Name,Email,JoinDate,LastPurchaseDate,Segment,Churn,MarketingSegment
+CUST00001,459,4,2342.36,Customer 1,customer1@example.com,2023-08-18,2024-11-19,0,1,Regular
+CUST00002,202,3,1500.78,Customer 2,customer2@example.com,2023-05-18,2024-07-07,2,1,Regular
+CUST00003,208,2,2300.9,Customer 3,customer3@example.com,2023-03-29,2024-02-27,2,1,Regular
+CUST00004,91,4,2612.3500000000004,Customer 4,customer4@example.com,2023-05-15,2024-08-08,2,1,Regular
+CUST00005,40,6,8517.7,Customer 5,customer5@example.com,2023-01-31,2024-11-11,1,0,Medium Value
+CUST00006,16,7,5376.09,Customer 6,customer6@example.com,2024-05-18,2024-06-05,1,0,Medium Value
+CUST00007,8,5,6374.240000000001,Customer 7,customer7@example.com,2024-02-25,2024-06-24,1,0,Medium Value
+CUST00008,1,3,1358.5,Customer 8,customer8@example.com,2023-10-28,2024-09-20,2,0,Regular
+CUST00009,44,8,10229.36,Customer 9,customer9@example.com,2024-05-31,2024-08-31,3,0,Medium Value
+CUST00010,130,10,9162.28,Customer 10,customer10@example.com,2023-09-18,2024-06-05,3,1,Regular
+CUST00011,64,2,2628.44,Customer 11,customer11@example.com,2024-12-06,2024-12-11,2,0,Regular
+CUST00012,268,4,4847.25,Customer 12,customer12@example.com,2023-03-02,2023-06-06,0,1,Regular
+CUST00013,60,5,3665.99,Customer 13,customer13@example.com,2023-03-25,2023-07-09,2,0,Regular
+CUST00014,1,5,3131.04,Customer 14,customer14@example.com,2024-10-06,2024-10-27,2,0,Regular
+CUST00015,161,6,5276.11,Customer 15,customer15@example.com,2024-08-11,2024-09-12,1,1,Regular
+CUST00016,75,9,7521.719999999999,Customer 16,customer16@example.com,2023-01-18,2024-10-03,3,0,Regular
+CUST00017,333,2,2104.46,Customer 17,customer17@example.com,2023-02-09,2024-09-30,0,1,Regular
+CUST00018,342,2,4803.02,Customer 18,customer18@example.com,2024-05-13,2024-10-14,0,1,Regular
+CUST00019,270,4,6657.63,Customer 19,customer19@example.com,2023-08-20,2023-12-18,0,1,Regular
+CUST00020,131,5,4193.61,Customer 20,customer20@example.com,2023-07-17,2024-03-10,2,1,Regular
+CUST00021,90,9,8644.109999999999,Customer 21,customer21@example.com,2024-11-26,2024-12-01,3,0,Regular
+CUST00022,127,4,5042.35,Customer 22,customer22@example.com,2023-08-05,2024-02-26,2,1,Regular
+CUST00023,7,5,1853.27,Customer 23,customer23@example.com,2024-11-27,2024-12-06,2,0,Regular
+CUST00024,151,6,10527.84,Customer 24,customer24@example.com,2023-04-26,2023-11-28,3,1,Regular
+CUST00025,325,3,2591.74,Customer 25,customer25@example.com,2024-10-21,2024-11-18,0,1,Regular
+CUST00026,15,5,5020.84,Customer 26,customer26@example.com,2024-06-03,2024-06-17,1,0,Regular
+CUST00027,18,4,6188.67,Customer 27,customer27@example.com,2023-03-15,2024-11-11,1,0,Medium Value
+CUST00028,87,5,5008.01,Customer 28,customer28@example.com,2024-07-23,2024-11-18,1,0,Regular
+CUST00029,528,2,3820.78,Customer 29,customer29@example.com,2023-02-23,2024-11-28,0,1,Regular
+CUST00030,93,6,8046.43,Customer 30,customer30@example.com,2024-12-01,2024-12-16,1,1,Regular
+CUST00031,161,7,7884.48,Customer 31,customer31@example.com,2024-05-27,2024-12-27,1,1,Regular
+CUST00032,106,6,6917.969999999999,Customer 32,customer32@example.com,2023-05-18,2023-12-20,1,1,Regular
+CUST00033,18,7,7357.84,Customer 33,customer33@example.com,2023-02-27,2023-10-26,1,0,High Value
+CUST00034,44,6,10015.68,Customer 34,customer34@example.com,2024-08-30,2024-11-20,3,0,Medium Value
+CUST00035,285,1,1426.64,Customer 35,customer35@example.com,2024-08-03,2024-08-05,0,1,Low Value
+CUST00036,12,8,10675.19,Customer 36,customer36@example.com,2024-06-23,2024-08-08,3,0,High Value
+CUST00037,31,6,10142.12,Customer 37,customer37@example.com,2023-03-12,2024-04-11,3,0,Medium Value
+CUST00038,195,8,10096.81,Customer 38,customer38@example.com,2023-03-06,2023-09-03,3,1,Regular
+CUST00039,80,3,3057.28,Customer 39,customer39@example.com,2023-07-21,2024-06-13,2,0,Regular
+CUST00040,53,4,6479.51,Customer 40,customer40@example.com,2024-04-01,2024-04-17,1,0,Medium Value
+CUST00041,498,4,3588.44,Customer 41,customer41@example.com,2024-04-10,2024-05-17,0,1,Regular
+CUST00042,0,7,5565.08,Customer 42,customer42@example.com,2024-02-13,2024-06-04,1,0,Medium Value
+CUST00043,63,4,5790.76,Customer 43,customer43@example.com,2024-09-03,2024-10-01,1,0,Regular
+CUST00044,317,2,2560.42,Customer 44,customer44@example.com,2023-07-05,2024-08-08,0,1,Regular
+CUST00045,189,6,5447.92,Customer 45,customer45@example.com,2023-10-18,2024-02-02,1,1,Regular
+CUST00046,115,6,4350.21,Customer 46,customer46@example.com,2024-12-24,2024-12-27,1,1,Regular
+CUST00047,42,3,2269.5,Customer 47,customer47@example.com,2023-10-19,2024-12-11,2,0,Regular
+CUST00048,95,6,7025.17,Customer 48,customer48@example.com,2024-09-20,2024-11-27,1,1,Regular
+CUST00049,50,10,6972.28,Customer 49,customer49@example.com,2024-01-13,2024-07-10,3,0,Medium Value
+CUST00050,540,1,1942.74,Customer 50,customer50@example.com,2024-06-02,2024-12-11,0,1,Low Value
+CUST00051,67,6,4727.8,Customer 51,customer51@example.com,2024-07-25,2024-09-15,1,0,Regular
+CUST00052,99,7,5752.7300000000005,Customer 52,customer52@example.com,2023-03-23,2024-04-01,1,1,Regular
+CUST00053,24,7,5710.86,Customer 53,customer53@example.com,2024-01-18,2024-09-22,1,0,Medium Value
+CUST00054,36,3,2107.75,Customer 54,customer54@example.com,2023-01-21,2023-04-25,2,0,Regular
+CUST00055,335,4,5773.49,Customer 55,customer55@example.com,2024-08-30,2024-11-11,0,1,Regular
+CUST00056,246,3,1595.0,Customer 56,customer56@example.com,2024-12-08,2024-12-22,0,1,Regular
+CUST00057,132,1,459.72,Customer 57,customer57@example.com,2023-06-20,2024-01-28,2,1,Low Value
+CUST00058,363,5,3446.8,Customer 58,customer58@example.com,2023-12-31,2024-09-06,0,1,Regular
+CUST00059,121,5,9521.39,Customer 59,customer59@example.com,2024-08-29,2024-10-29,1,1,Regular
+CUST00060,99,3,3699.12,Customer 60,customer60@example.com,2024-06-26,2024-08-20,2,1,Regular
+CUST00061,66,5,7282.78,Customer 61,customer61@example.com,2023-01-22,2023-02-13,1,0,Regular
+CUST00062,126,7,9410.98,Customer 62,customer62@example.com,2023-08-19,2024-09-07,3,1,Regular
+CUST00063,489,3,3218.02,Customer 63,customer63@example.com,2023-01-02,2024-05-24,0,1,Regular
+CUST00064,112,6,8326.119999999999,Customer 64,customer64@example.com,2023-04-03,2024-08-08,1,1,Regular
+CUST00065,355,1,2296.4,Customer 65,customer65@example.com,2024-11-24,2024-11-24,0,1,Low Value
+CUST00066,76,5,5818.759999999999,Customer 66,customer66@example.com,2023-04-24,2023-11-22,1,0,Regular
+CUST00067,180,6,6114.09,Customer 67,customer67@example.com,2023-09-28,2023-12-12,1,1,Regular
+CUST00068,65,5,6226.15,Customer 68,customer68@example.com,2023-10-23,2024-04-15,1,0,Regular
+CUST00069,66,5,4496.549999999999,Customer 69,customer69@example.com,2023-09-09,2024-05-12,1,0,Regular
+CUST00070,140,5,5814.07,Customer 70,customer70@example.com,2024-09-19,2024-10-31,1,1,Regular
+CUST00071,35,7,8306.28,Customer 71,customer71@example.com,2023-10-07,2024-02-20,1,0,Medium Value
+CUST00072,49,8,8449.72,Customer 72,customer72@example.com,2024-02-05,2024-11-07,3,0,Medium Value
+CUST00073,51,8,4346.93,Customer 73,customer73@example.com,2024-04-20,2024-08-25,1,0,Regular
+CUST00074,7,6,6108.73,Customer 74,customer74@example.com,2023-10-06,2023-11-11,1,0,Medium Value
+CUST00075,64,4,2770.66,Customer 75,customer75@example.com,2024-04-18,2024-07-26,2,0,Regular
+CUST00076,378,3,4067.48,Customer 76,customer76@example.com,2024-09-07,2024-09-27,0,1,Regular
+CUST00077,230,2,2867.04,Customer 77,customer77@example.com,2024-02-26,2024-05-23,2,1,Regular
+CUST00078,132,4,5597.719999999999,Customer 78,customer78@example.com,2023-11-07,2024-12-04,2,1,Regular
+CUST00079,95,2,2053.14,Customer 79,customer79@example.com,2023-04-17,2024-01-27,2,1,Regular
+CUST00080,262,6,6145.24,Customer 80,customer80@example.com,2023-02-18,2024-06-25,1,1,Regular
+CUST00081,43,4,5272.72,Customer 81,customer81@example.com,2024-05-07,2024-08-08,2,0,Medium Value
+CUST00082,18,4,3368.52,Customer 82,customer82@example.com,2024-07-15,2024-10-02,2,0,Regular
+CUST00083,9,10,8018.24,Customer 83,customer83@example.com,2023-02-26,2024-06-13,3,0,High Value
+CUST00084,88,4,3244.96,Customer 84,customer84@example.com,2024-02-24,2024-02-24,2,0,Regular
+CUST00085,141,4,5573.120000000001,Customer 85,customer85@example.com,2023-09-05,2023-12-21,2,1,Regular
+CUST00086,12,5,3361.51,Customer 86,customer86@example.com,2023-10-25,2024-05-31,2,0,Regular
+CUST00087,152,6,6997.469999999999,Customer 87,customer87@example.com,2024-09-15,2024-10-16,1,1,Regular
+CUST00088,46,11,6596.52,Customer 88,customer88@example.com,2024-01-03,2024-04-03,3,0,Medium Value
+CUST00089,356,5,5482.620000000001,Customer 89,customer89@example.com,2024-08-24,2024-12-26,0,1,Regular
+CUST00090,28,5,3505.81,Customer 90,customer90@example.com,2024-10-12,2024-10-24,2,0,Regular
+CUST00091,2,8,3376.26,Customer 91,customer91@example.com,2023-09-06,2024-02-04,1,0,Regular
+CUST00092,60,9,9580.64,Customer 92,customer92@example.com,2024-08-02,2024-12-08,3,0,Regular
+CUST00093,137,3,3085.05,Customer 93,customer93@example.com,2024-09-30,2024-11-09,2,1,Regular
+CUST00094,125,3,3006.21,Customer 94,customer94@example.com,2023-09-15,2023-10-10,2,1,Regular
+CUST00095,379,4,5443.81,Customer 95,customer95@example.com,2024-01-12,2024-10-25,0,1,Regular
+CUST00096,58,3,4622.81,Customer 96,customer96@example.com,2024-12-30,2024-12-30,2,0,Regular
+CUST00097,157,7,11155.15,Customer 97,customer97@example.com,2023-05-29,2023-11-13,3,1,Regular
+CUST00098,53,3,6546.39,Customer 98,customer98@example.com,2023-11-08,2024-11-05,2,0,Regular
+CUST00099,53,10,12024.33,Customer 99,customer99@example.com,2024-06-08,2024-09-28,3,0,Medium Value
+CUST00100,108,8,7074.9400000000005,Customer 100,customer100@example.com,2024-08-31,2024-12-14,1,1,Regular
+CUST00101,189,2,2318.53,Customer 101,customer101@example.com,2024-07-18,2024-08-05,2,1,Regular
+CUST00102,102,8,7919.93,Customer 102,customer102@example.com,2023-04-03,2023-06-02,3,1,Regular
+CUST00103,3,5,4403.05,Customer 103,customer103@example.com,2024-08-24,2024-11-16,1,0,Regular
+CUST00104,73,9,10321.54,Customer 104,customer104@example.com,2023-02-04,2024-12-11,3,0,Regular
+CUST00105,187,4,8351.48,Customer 105,customer105@example.com,2024-03-31,2024-05-27,1,1,Regular
+CUST00106,319,3,4418.1900000000005,Customer 106,customer106@example.com,2023-09-13,2024-01-24,0,1,Regular
+CUST00107,40,4,4784.879999999999,Customer 107,customer107@example.com,2023-03-01,2023-06-29,2,0,Regular
+CUST00108,462,3,3158.4300000000003,Customer 108,customer108@example.com,2023-01-01,2024-11-14,0,1,Regular
+CUST00109,93,3,3055.6,Customer 109,customer109@example.com,2024-03-17,2024-07-15,2,1,Regular
+CUST00110,92,4,4219.44,Customer 110,customer110@example.com,2024-02-11,2024-05-28,2,1,Regular
+CUST00111,21,4,4096.57,Customer 111,customer111@example.com,2024-06-06,2024-06-28,2,0,Regular
+CUST00112,70,7,9790.43,Customer 112,customer112@example.com,2023-09-07,2024-06-07,3,0,Regular
+CUST00113,66,10,12619.28,Customer 113,customer113@example.com,2024-03-24,2024-07-30,3,0,Regular
+CUST00114,148,7,8804.67,Customer 114,customer114@example.com,2024-07-31,2024-10-05,3,1,Regular
+CUST00115,3,5,4142.27,Customer 115,customer115@example.com,2024-06-23,2024-10-03,2,0,Regular
+CUST00116,264,3,2770.14,Customer 116,customer116@example.com,2023-11-08,2023-11-23,0,1,Regular
+CUST00117,52,5,3632.47,Customer 117,customer117@example.com,2023-01-21,2023-12-22,2,0,Regular
+CUST00118,614,2,2598.98,Customer 118,customer118@example.com,2023-09-16,2024-06-21,0,1,Regular
+CUST00119,262,4,3308.2,Customer 119,customer119@example.com,2024-07-29,2024-09-13,0,1,Regular
+CUST00120,18,3,1696.4,Customer 120,customer120@example.com,2024-04-21,2024-07-28,2,0,Regular
+CUST00121,242,4,3662.23,Customer 121,customer121@example.com,2024-08-04,2024-09-01,0,1,Regular
+CUST00122,94,6,10247.37,Customer 122,customer122@example.com,2023-08-30,2024-10-07,3,1,Regular
+CUST00123,4,6,7363.61,Customer 123,customer123@example.com,2023-09-20,2023-11-05,1,0,High Value
+CUST00124,58,8,9841.77,Customer 124,customer124@example.com,2023-06-26,2024-11-14,3,0,Medium Value
+CUST00125,8,7,9175.58,Customer 125,customer125@example.com,2024-07-14,2024-11-30,3,0,High Value
+CUST00126,91,6,10676.79,Customer 126,customer126@example.com,2023-03-15,2024-05-09,3,1,Regular
+CUST00127,218,7,9344.86,Customer 127,customer127@example.com,2023-11-30,2024-03-08,3,1,Regular
+CUST00128,80,5,4752.04,Customer 128,customer128@example.com,2024-12-03,2024-12-07,1,0,Regular
+CUST00129,265,8,12553.01,Customer 129,customer129@example.com,2024-03-28,2024-04-02,3,1,Regular
+CUST00130,238,6,6530.679999999999,Customer 130,customer130@example.com,2023-03-10,2024-08-26,1,1,Regular
+CUST00131,179,2,1994.42,Customer 131,customer131@example.com,2024-05-06,2024-09-19,2,1,Regular
+CUST00132,74,8,7875.48,Customer 132,customer132@example.com,2024-05-26,2024-08-02,3,0,Regular
+CUST00133,95,3,4891.51,Customer 133,customer133@example.com,2024-02-22,2024-07-15,2,1,Regular
+CUST00134,213,2,2014.76,Customer 134,customer134@example.com,2023-10-22,2024-07-03,2,1,Regular
+CUST00135,63,5,4665.97,Customer 135,customer135@example.com,2023-11-10,2024-04-15,1,0,Regular
+CUST00136,75,5,6967.1,Customer 136,customer136@example.com,2024-01-05,2024-04-11,1,0,Regular
+CUST00137,54,7,10293.28,Customer 137,customer137@example.com,2024-10-19,2024-11-15,3,0,Medium Value
+CUST00138,65,6,7037.3,Customer 138,customer138@example.com,2024-05-16,2024-06-03,1,0,Regular
+CUST00139,289,6,4536.88,Customer 139,customer139@example.com,2024-10-16,2024-12-09,0,1,Regular
+CUST00140,124,4,3800.4,Customer 140,customer140@example.com,2023-07-20,2024-11-17,2,1,Regular
+CUST00141,72,10,8570.87,Customer 141,customer141@example.com,2024-02-26,2024-06-07,3,0,Regular
+CUST00142,131,5,5360.299999999999,Customer 142,customer142@example.com,2023-09-08,2024-06-25,1,1,Regular
+CUST00143,249,6,6856.1900000000005,Customer 143,customer143@example.com,2024-03-31,2024-10-01,1,1,Regular
+CUST00144,99,4,6422.3,Customer 144,customer144@example.com,2023-04-23,2023-07-01,1,1,Regular
+CUST00145,175,3,994.53,Customer 145,customer145@example.com,2024-01-18,2024-06-17,2,1,Regular
+CUST00146,579,1,386.08,Customer 146,customer146@example.com,2024-12-10,2024-12-21,0,1,Low Value
+CUST00147,11,8,9451.44,Customer 147,customer147@example.com,2023-09-22,2024-09-04,3,0,High Value
+CUST00148,143,6,8248.85,Customer 148,customer148@example.com,2023-05-24,2024-10-02,1,1,Regular
+CUST00149,11,8,10922.23,Customer 149,customer149@example.com,2023-08-24,2023-09-30,3,0,High Value
+CUST00150,13,4,4052.26,Customer 150,customer150@example.com,2024-11-11,2024-11-28,2,0,Regular
+CUST00151,357,1,80.44,Customer 151,customer151@example.com,2023-10-27,2024-03-03,0,1,Low Value
+CUST00152,332,3,3475.48,Customer 152,customer152@example.com,2024-02-26,2024-12-04,0,1,Regular
+CUST00153,31,3,832.04,Customer 153,customer153@example.com,2024-10-20,2024-12-20,2,0,Regular
+CUST00154,210,3,2798.16,Customer 154,customer154@example.com,2023-02-28,2024-02-25,2,1,Regular
+CUST00155,192,7,9926.88,Customer 155,customer155@example.com,2024-06-21,2024-09-05,3,1,Regular
+CUST00156,51,7,5234.91,Customer 156,customer156@example.com,2023-02-24,2023-04-08,1,0,Medium Value
+CUST00157,268,3,3256.8900000000003,Customer 157,customer157@example.com,2023-09-20,2024-06-01,0,1,Regular
+CUST00158,439,6,5343.24,Customer 158,customer158@example.com,2024-04-01,2024-11-12,0,1,Regular
+CUST00159,2,6,6640.75,Customer 159,customer159@example.com,2024-12-11,2024-12-30,1,0,Medium Value
+CUST00160,55,6,5131.9,Customer 160,customer160@example.com,2023-10-26,2024-12-03,1,0,Medium Value
+CUST00161,200,7,10405.36,Customer 161,customer161@example.com,2023-06-05,2023-07-05,3,1,Regular
+CUST00162,136,6,4774.57,Customer 162,customer162@example.com,2023-06-17,2023-11-13,1,1,Regular
+CUST00163,18,6,6705.07,Customer 163,customer163@example.com,2024-11-14,2024-11-18,1,0,Medium Value
+CUST00164,513,3,2967.54,Customer 164,customer164@example.com,2024-10-21,2024-12-21,0,1,Regular
+CUST00165,213,2,2496.0,Customer 165,customer165@example.com,2024-09-29,2024-12-20,2,1,Regular
+CUST00167,35,6,8088.0,Customer 167,customer167@example.com,2024-11-16,2024-12-09,1,0,Medium Value
+CUST00168,123,8,6983.7,Customer 168,customer168@example.com,2023-12-24,2024-01-06,1,1,Regular
+CUST00169,126,4,4816.27,Customer 169,customer169@example.com,2023-03-27,2024-01-20,2,1,Regular
+CUST00170,113,11,11655.25,Customer 170,customer170@example.com,2024-05-01,2024-08-24,3,1,Regular
+CUST00171,244,3,1852.27,Customer 171,customer171@example.com,2024-08-20,2024-11-19,0,1,Regular
+CUST00172,205,7,12904.92,Customer 172,customer172@example.com,2024-06-30,2024-12-19,3,1,Regular
+CUST00173,254,5,3285.29,Customer 173,customer173@example.com,2024-07-01,2024-08-16,0,1,Regular
+CUST00174,81,4,2398.86,Customer 174,customer174@example.com,2023-05-20,2023-07-04,2,0,Regular
+CUST00175,39,5,5682.82,Customer 175,customer175@example.com,2023-08-16,2024-05-14,1,0,Medium Value
+CUST00176,530,3,2306.98,Customer 176,customer176@example.com,2024-04-13,2024-06-03,0,1,Regular
+CUST00177,115,6,5672.24,Customer 177,customer177@example.com,2023-06-03,2024-11-02,1,1,Regular
+CUST00178,313,4,3678.8,Customer 178,customer178@example.com,2023-11-17,2024-06-04,0,1,Regular
+CUST00179,5,6,5654.200000000001,Customer 179,customer179@example.com,2024-03-25,2024-05-01,1,0,Medium Value
+CUST00180,14,6,5240.5,Customer 180,customer180@example.com,2024-09-17,2024-11-05,1,0,Medium Value
+CUST00181,44,4,4943.11,Customer 181,customer181@example.com,2023-10-09,2024-07-19,2,0,Regular
+CUST00182,10,5,4303.01,Customer 182,customer182@example.com,2024-06-09,2024-10-14,1,0,Regular
+CUST00183,584,2,5204.76,Customer 183,customer183@example.com,2023-01-11,2023-02-27,0,1,Regular
+CUST00184,40,8,10192.15,Customer 184,customer184@example.com,2024-05-07,2024-09-25,3,0,Medium Value
+CUST00185,31,9,12935.46,Customer 185,customer185@example.com,2023-01-21,2023-09-07,3,0,Medium Value
+CUST00186,179,4,4543.32,Customer 186,customer186@example.com,2024-09-02,2024-10-22,2,1,Regular
+CUST00187,274,3,3288.67,Customer 187,customer187@example.com,2024-01-24,2024-07-09,0,1,Regular
+CUST00188,143,5,3586.83,Customer 188,customer188@example.com,2024-07-21,2024-12-05,2,1,Regular
+CUST00189,8,5,3203.05,Customer 189,customer189@example.com,2023-07-04,2023-11-10,2,0,Regular
+CUST00190,22,9,11671.9,Customer 190,customer190@example.com,2024-08-22,2024-12-14,3,0,High Value
+CUST00191,108,6,5191.349999999999,Customer 191,customer191@example.com,2024-06-23,2024-07-01,1,1,Regular
+CUST00192,13,5,5235.26,Customer 192,customer192@example.com,2024-09-30,2024-12-25,1,0,Medium Value
+CUST00193,258,6,7617.89,Customer 193,customer193@example.com,2023-01-29,2023-07-16,1,1,Regular
+CUST00194,117,9,12404.06,Customer 194,customer194@example.com,2023-04-22,2024-03-28,3,1,Regular
+CUST00195,631,3,2510.13,Customer 195,customer195@example.com,2023-05-11,2023-12-04,0,1,Regular
+CUST00196,420,3,2290.64,Customer 196,customer196@example.com,2024-12-06,2024-12-08,0,1,Regular
+CUST00197,26,6,7029.83,Customer 197,customer197@example.com,2024-04-30,2024-09-02,1,0,Medium Value
+CUST00198,206,4,6547.42,Customer 198,customer198@example.com,2023-06-14,2024-12-15,1,1,Regular
+CUST00199,129,3,1936.05,Customer 199,customer199@example.com,2024-03-27,2024-07-31,2,1,Regular
+CUST00200,4,5,5506.72,Customer 200,customer200@example.com,2023-07-27,2024-09-06,1,0,Medium Value
+CUST00201,499,5,5713.200000000001,Customer 201,customer201@example.com,2024-12-25,2024-12-28,0,1,Regular
+CUST00202,173,5,6821.0,Customer 202,customer202@example.com,2023-03-01,2024-11-05,1,1,Regular
+CUST00203,235,4,7509.94,Customer 203,customer203@example.com,2023-10-13,2024-06-17,1,1,Regular
+CUST00204,156,1,1487.04,Customer 204,customer204@example.com,2023-05-24,2023-08-12,2,1,Low Value
+CUST00205,258,6,9264.57,Customer 205,customer205@example.com,2023-06-06,2024-12-28,1,1,Regular
+CUST00206,107,3,4141.84,Customer 206,customer206@example.com,2024-12-21,2024-12-27,2,1,Regular
+CUST00207,156,3,1498.51,Customer 207,customer207@example.com,2024-07-30,2024-11-08,2,1,Regular
+CUST00208,42,10,13396.71,Customer 208,customer208@example.com,2023-03-07,2023-09-15,3,0,Medium Value
+CUST00209,23,11,12158.66,Customer 209,customer209@example.com,2023-08-27,2024-09-30,3,0,High Value
+CUST00210,127,5,6173.82,Customer 210,customer210@example.com,2024-07-30,2024-09-02,1,1,Regular
+CUST00211,400,5,4273.15,Customer 211,customer211@example.com,2024-04-10,2024-09-27,0,1,Regular
+CUST00212,332,3,2940.6,Customer 212,customer212@example.com,2024-02-18,2024-12-18,0,1,Regular
+CUST00213,99,6,7010.4,Customer 213,customer213@example.com,2023-01-13,2024-11-08,1,1,Regular
+CUST00214,173,6,4819.67,Customer 214,customer214@example.com,2024-05-14,2024-09-22,1,1,Regular
+CUST00215,154,4,5030.77,Customer 215,customer215@example.com,2023-08-18,2024-04-09,2,1,Regular
+CUST00216,70,9,10101.77,Customer 216,customer216@example.com,2023-09-05,2023-12-28,3,0,Regular
+CUST00217,246,5,9374.36,Customer 217,customer217@example.com,2024-08-27,2024-10-01,1,1,Regular
+CUST00218,104,2,1178.06,Customer 218,customer218@example.com,2024-01-26,2024-05-29,2,1,Regular
+CUST00219,19,2,1314.6,Customer 219,customer219@example.com,2023-09-27,2024-11-29,2,0,Regular
+CUST00220,62,2,1242.42,Customer 220,customer220@example.com,2023-12-25,2024-03-13,2,0,Regular
+CUST00221,226,2,2761.64,Customer 221,customer221@example.com,2024-07-05,2024-09-10,2,1,Regular
+CUST00222,2,5,7190.74,Customer 222,customer222@example.com,2023-02-21,2024-01-09,1,0,Medium Value
+CUST00223,442,2,743.78,Customer 223,customer223@example.com,2024-07-08,2024-09-25,0,1,Regular
+CUST00224,5,4,3867.04,Customer 224,customer224@example.com,2023-10-16,2024-09-08,2,0,Regular
+CUST00225,432,4,3746.99,Customer 225,customer225@example.com,2023-08-19,2024-02-27,0,1,Regular
+CUST00226,281,5,6802.69,Customer 226,customer226@example.com,2024-10-13,2024-12-07,1,1,Regular
+CUST00227,18,6,6337.17,Customer 227,customer227@example.com,2024-12-06,2024-12-20,1,0,Medium Value
+CUST00228,71,6,6957.92,Customer 228,customer228@example.com,2024-04-19,2024-12-14,1,0,Regular
+CUST00229,152,4,8954.16,Customer 229,customer229@example.com,2023-07-03,2024-11-24,1,1,Regular
+CUST00230,78,4,6252.889999999999,Customer 230,customer230@example.com,2023-06-03,2024-09-10,1,0,Regular
+CUST00231,40,5,5186.02,Customer 231,customer231@example.com,2023-06-02,2024-07-13,1,0,Medium Value
+CUST00232,1,7,11499.5,Customer 232,customer232@example.com,2024-04-20,2024-12-13,3,0,High Value
+CUST00233,61,4,3411.07,Customer 233,customer233@example.com,2024-11-20,2024-12-16,2,0,Regular
+CUST00234,254,3,2266.2700000000004,Customer 234,customer234@example.com,2023-06-17,2024-11-08,0,1,Regular
+CUST00235,488,2,1054.58,Customer 235,customer235@example.com,2023-11-29,2024-06-22,0,1,Regular
+CUST00236,238,2,2259.1,Customer 236,customer236@example.com,2024-11-24,2024-11-27,0,1,Regular
+CUST00237,125,4,4048.89,Customer 237,customer237@example.com,2023-03-09,2023-11-08,2,1,Regular
+CUST00238,31,3,2652.13,Customer 238,customer238@example.com,2024-05-05,2024-07-09,2,0,Regular
+CUST00239,51,6,4677.51,Customer 239,customer239@example.com,2023-08-17,2024-04-16,1,0,Regular
+CUST00241,0,6,8116.879999999999,Customer 241,customer241@example.com,2023-04-18,2024-04-06,1,0,High Value
+CUST00242,26,4,3914.55,Customer 242,customer242@example.com,2024-03-23,2024-11-07,2,0,Regular
+CUST00243,80,7,4954.54,Customer 243,customer243@example.com,2023-11-19,2024-09-19,1,0,Regular
+CUST00244,133,7,8016.49,Customer 244,customer244@example.com,2023-10-08,2024-06-19,1,1,Regular
+CUST00245,300,2,1117.97,Customer 245,customer245@example.com,2024-12-04,2024-12-17,0,1,Regular
+CUST00246,157,5,4099.75,Customer 246,customer246@example.com,2024-01-07,2024-06-03,2,1,Regular
+CUST00247,0,4,1546.08,Customer 247,customer247@example.com,2023-05-13,2024-09-10,2,0,Regular
+CUST00248,101,6,10277.91,Customer 248,customer248@example.com,2023-05-25,2024-11-08,3,1,Regular
+CUST00249,310,6,7603.27,Customer 249,customer249@example.com,2024-01-04,2024-07-12,1,1,Regular
+CUST00250,377,1,1514.43,Customer 250,customer250@example.com,2024-11-15,2024-12-29,0,1,Low Value
+CUST00251,141,7,7854.14,Customer 251,customer251@example.com,2024-09-18,2024-10-23,1,1,Regular
+CUST00252,380,5,5106.38,Customer 252,customer252@example.com,2024-07-09,2024-12-15,0,1,Regular
+CUST00253,466,2,1396.25,Customer 253,customer253@example.com,2023-05-26,2023-12-27,0,1,Regular
+CUST00254,55,5,4607.13,Customer 254,customer254@example.com,2023-10-31,2024-08-29,1,0,Regular
+CUST00255,27,3,2943.12,Customer 255,customer255@example.com,2024-10-25,2024-11-27,2,0,Regular
+CUST00256,30,8,9379.22,Customer 256,customer256@example.com,2023-09-13,2024-08-23,3,0,Medium Value
+CUST00257,90,6,5599.89,Customer 257,customer257@example.com,2024-11-11,2024-11-20,1,0,Regular
+CUST00258,38,8,12239.0,Customer 258,customer258@example.com,2024-02-21,2024-10-23,3,0,Medium Value
+CUST00259,113,5,3794.96,Customer 259,customer259@example.com,2023-09-05,2024-12-10,2,1,Regular
+CUST00260,72,5,3627.85,Customer 260,customer260@example.com,2023-05-07,2024-01-04,2,0,Regular
+CUST00261,121,7,7718.33,Customer 261,customer261@example.com,2023-08-20,2024-02-11,1,1,Regular
+CUST00262,76,9,9399.4,Customer 262,customer262@example.com,2023-12-14,2024-07-11,3,0,Regular
+CUST00263,69,7,7535.37,Customer 263,customer263@example.com,2023-01-23,2023-06-28,1,0,Regular
+CUST00264,107,5,6659.59,Customer 264,customer264@example.com,2023-02-25,2024-08-30,1,1,Regular
+CUST00265,114,11,9860.47,Customer 265,customer265@example.com,2024-08-23,2024-11-30,3,1,Regular
+CUST00266,56,4,3973.18,Customer 266,customer266@example.com,2023-12-20,2024-02-07,2,0,Regular
+CUST00267,12,7,10779.22,Customer 267,customer267@example.com,2023-01-14,2024-08-03,3,0,High Value
+CUST00268,234,2,2406.15,Customer 268,customer268@example.com,2023-08-01,2024-09-22,0,1,Regular
+CUST00269,26,3,4961.59,Customer 269,customer269@example.com,2024-07-12,2024-10-20,2,0,Regular
+CUST00270,104,9,9018.38,Customer 270,customer270@example.com,2023-04-24,2024-10-31,3,1,Regular
+CUST00271,222,3,2286.9300000000003,Customer 271,customer271@example.com,2024-05-18,2024-09-24,2,1,Regular
+CUST00272,418,2,2475.59,Customer 272,customer272@example.com,2023-08-18,2024-02-22,0,1,Regular
+CUST00273,41,12,17080.36,Customer 273,customer273@example.com,2024-09-21,2024-10-09,3,0,Medium Value
+CUST00274,129,11,10070.02,Customer 274,customer274@example.com,2023-12-28,2024-05-18,3,1,Regular
+CUST00275,337,6,3601.23,Customer 275,customer275@example.com,2023-12-27,2024-02-10,0,1,Regular
+CUST00276,54,3,2979.45,Customer 276,customer276@example.com,2023-04-09,2024-07-20,2,0,Regular
+CUST00277,15,2,832.27,Customer 277,customer277@example.com,2023-03-11,2024-02-18,2,0,Regular
+CUST00278,154,7,6820.03,Customer 278,customer278@example.com,2024-06-24,2024-09-10,1,1,Regular
+CUST00279,95,5,6994.110000000001,Customer 279,customer279@example.com,2023-09-12,2024-04-22,1,1,Regular
+CUST00280,38,9,6883.21,Customer 280,customer280@example.com,2024-05-10,2024-09-25,3,0,Medium Value
+CUST00281,40,8,10671.45,Customer 281,customer281@example.com,2023-12-13,2024-07-30,3,0,Medium Value
+CUST00282,126,3,4509.25,Customer 282,customer282@example.com,2024-05-08,2024-09-14,2,1,Regular
+CUST00283,164,3,2235.24,Customer 283,customer283@example.com,2024-01-08,2024-09-28,2,1,Regular
+CUST00284,18,4,4535.82,Customer 284,customer284@example.com,2024-05-19,2024-07-30,2,0,Regular
+CUST00285,27,8,8174.69,Customer 285,customer285@example.com,2024-10-27,2024-12-13,3,0,High Value
+CUST00286,27,6,6478.8,Customer 286,customer286@example.com,2023-08-19,2024-06-05,1,0,Medium Value
+CUST00287,121,3,3978.67,Customer 287,customer287@example.com,2024-05-09,2024-11-29,2,1,Regular
+CUST00288,59,4,7647.25,Customer 288,customer288@example.com,2023-07-11,2023-09-16,1,0,Medium Value
+CUST00289,158,4,3734.95,Customer 289,customer289@example.com,2024-10-12,2024-12-08,2,1,Regular
+CUST00290,37,12,17945.16,Customer 290,customer290@example.com,2024-05-10,2024-07-08,3,0,Medium Value
+CUST00291,146,7,7930.85,Customer 291,customer291@example.com,2023-12-23,2024-05-24,1,1,Regular
+CUST00292,24,5,2794.51,Customer 292,customer292@example.com,2023-06-11,2024-09-02,2,0,Regular
+CUST00293,260,6,9868.02,Customer 293,customer293@example.com,2023-05-09,2024-04-15,1,1,Regular
+CUST00294,5,9,10669.08,Customer 294,customer294@example.com,2023-02-24,2024-01-13,3,0,High Value
+CUST00295,41,5,5024.98,Customer 295,customer295@example.com,2024-01-27,2024-07-13,1,0,Regular
+CUST00296,19,5,5826.46,Customer 296,customer296@example.com,2024-02-12,2024-02-17,1,0,Medium Value
+CUST00297,31,7,8687.0,Customer 297,customer297@example.com,2023-06-14,2024-04-11,3,0,Medium Value
+CUST00298,165,5,3896.9,Customer 298,customer298@example.com,2023-07-16,2024-03-20,2,1,Regular
+CUST00299,64,5,7244.13,Customer 299,customer299@example.com,2023-06-29,2024-06-11,1,0,Regular
+CUST00300,41,5,7364.88,Customer 300,customer300@example.com,2023-11-19,2024-09-05,1,0,Medium Value
+CUST00301,26,6,6624.29,Customer 301,customer301@example.com,2024-10-16,2024-11-22,1,0,Medium Value
+CUST00302,241,3,4171.38,Customer 302,customer302@example.com,2024-05-06,2024-07-07,0,1,Regular
+CUST00303,62,6,4756.49,Customer 303,customer303@example.com,2024-01-02,2024-12-17,1,0,Regular
+CUST00304,298,3,598.6600000000001,Customer 304,customer304@example.com,2024-11-14,2024-11-29,0,1,Regular
+CUST00305,123,6,4581.98,Customer 305,customer305@example.com,2024-04-01,2024-07-15,1,1,Regular
+CUST00306,283,6,5845.450000000001,Customer 306,customer306@example.com,2023-04-28,2023-12-29,1,1,Regular
+CUST00307,301,3,3827.26,Customer 307,customer307@example.com,2023-11-01,2024-12-12,0,1,Regular
+CUST00308,43,4,3486.54,Customer 308,customer308@example.com,2023-07-12,2024-08-13,2,0,Regular
+CUST00309,158,8,8120.179999999999,Customer 309,customer309@example.com,2023-11-13,2024-12-15,3,1,Regular
+CUST00310,23,3,5319.4400000000005,Customer 310,customer310@example.com,2023-08-03,2023-09-27,2,0,Regular
+CUST00311,240,5,2975.57,Customer 311,customer311@example.com,2023-06-25,2024-09-15,2,1,Regular
+CUST00312,5,4,4731.56,Customer 312,customer312@example.com,2024-01-18,2024-04-07,2,0,Regular
+CUST00313,78,8,8482.73,Customer 313,customer313@example.com,2024-04-29,2024-12-19,3,0,Regular
+CUST00314,168,4,6317.62,Customer 314,customer314@example.com,2023-02-16,2023-09-11,1,1,Regular
+CUST00315,133,5,3053.61,Customer 315,customer315@example.com,2023-08-25,2024-11-21,2,1,Regular
+CUST00316,87,4,3501.7499999999995,Customer 316,customer316@example.com,2023-06-29,2024-06-17,2,0,Regular
+CUST00317,125,5,3093.29,Customer 317,customer317@example.com,2023-11-16,2024-08-13,2,1,Regular
+CUST00318,190,3,4603.31,Customer 318,customer318@example.com,2024-01-15,2024-01-21,2,1,Regular
+CUST00319,24,7,7817.269999999999,Customer 319,customer319@example.com,2023-10-28,2024-07-24,1,0,High Value
+CUST00320,22,8,6035.01,Customer 320,customer320@example.com,2023-12-07,2024-10-22,1,0,Medium Value
+CUST00321,133,5,3646.08,Customer 321,customer321@example.com,2023-06-24,2024-01-25,2,1,Regular
+CUST00322,211,2,1224.66,Customer 322,customer322@example.com,2023-01-04,2023-03-26,2,1,Regular
+CUST00323,97,6,5808.91,Customer 323,customer323@example.com,2024-01-25,2024-07-26,1,1,Regular
+CUST00324,376,3,2437.12,Customer 324,customer324@example.com,2023-12-10,2024-01-08,0,1,Regular
+CUST00325,145,5,4233.25,Customer 325,customer325@example.com,2023-02-01,2023-04-29,2,1,Regular
+CUST00326,311,3,5783.37,Customer 326,customer326@example.com,2023-03-11,2023-04-25,0,1,Regular
+CUST00327,15,8,9123.9,Customer 327,customer327@example.com,2024-10-26,2024-11-26,3,0,High Value
+CUST00328,97,8,11769.26,Customer 328,customer328@example.com,2023-09-23,2024-12-23,3,1,Regular
+CUST00329,218,4,4048.98,Customer 329,customer329@example.com,2023-01-02,2023-04-18,2,1,Regular
+CUST00330,60,6,7163.21,Customer 330,customer330@example.com,2023-12-12,2023-12-29,1,0,Regular
+CUST00331,65,5,5072.610000000001,Customer 331,customer331@example.com,2023-01-13,2024-10-27,1,0,Regular
+CUST00332,132,5,7855.219999999999,Customer 332,customer332@example.com,2024-09-25,2024-12-20,1,1,Regular
+CUST00333,119,3,2872.98,Customer 333,customer333@example.com,2023-08-23,2024-05-10,2,1,Regular
+CUST00334,607,2,2393.82,Customer 334,customer334@example.com,2023-03-16,2023-07-27,0,1,Regular
+CUST00335,93,4,4789.55,Customer 335,customer335@example.com,2023-09-15,2024-03-28,2,1,Regular
+CUST00336,93,7,7932.23,Customer 336,customer336@example.com,2024-06-21,2024-11-06,1,1,Regular
+CUST00337,31,2,2795.5199999999995,Customer 337,customer337@example.com,2024-06-25,2024-09-10,2,0,Regular
+CUST00338,28,5,4572.2,Customer 338,customer338@example.com,2024-03-15,2024-06-16,1,0,Regular
+CUST00339,161,3,3341.1200000000003,Customer 339,customer339@example.com,2024-05-10,2024-09-18,2,1,Regular
+CUST00340,187,6,6957.05,Customer 340,customer340@example.com,2023-06-21,2024-05-06,1,1,Regular
+CUST00341,11,6,9012.58,Customer 341,customer341@example.com,2024-10-04,2024-10-06,1,0,High Value
+CUST00342,165,3,4233.360000000001,Customer 342,customer342@example.com,2023-12-30,2024-04-04,2,1,Regular
+CUST00343,386,2,3073.6,Customer 343,customer343@example.com,2023-05-21,2024-10-01,0,1,Regular
+CUST00344,500,4,6790.8,Customer 344,customer344@example.com,2023-04-05,2023-12-22,0,1,Regular
+CUST00345,287,2,3822.93,Customer 345,customer345@example.com,2023-08-16,2023-09-05,0,1,Regular
+CUST00346,177,4,2678.27,Customer 346,customer346@example.com,2024-10-13,2024-12-04,2,1,Regular
+CUST00347,55,4,2371.19,Customer 347,customer347@example.com,2024-08-13,2024-11-21,2,0,Regular
+CUST00348,69,4,4095.92,Customer 348,customer348@example.com,2024-08-30,2024-12-13,2,0,Regular
+CUST00349,56,3,2066.94,Customer 349,customer349@example.com,2023-11-30,2024-04-04,2,0,Regular
+CUST00350,153,5,5417.75,Customer 350,customer350@example.com,2024-08-25,2024-09-08,1,1,Regular
+CUST00351,331,2,765.3199999999999,Customer 351,customer351@example.com,2024-01-20,2024-05-02,0,1,Regular
+CUST00352,193,1,771.92,Customer 352,customer352@example.com,2024-09-15,2024-10-15,2,1,Low Value
+CUST00353,108,8,6785.56,Customer 353,customer353@example.com,2024-09-02,2024-09-07,1,1,Regular
+CUST00354,48,7,7860.91,Customer 354,customer354@example.com,2024-11-02,2024-11-25,1,0,Medium Value
+CUST00355,140,1,1643.94,Customer 355,customer355@example.com,2023-01-02,2023-11-17,2,1,Low Value
+CUST00356,468,3,3576.0,Customer 356,customer356@example.com,2023-01-10,2024-03-18,0,1,Regular
+CUST00357,10,5,7012.66,Customer 357,customer357@example.com,2024-02-02,2024-08-15,1,0,Medium Value
+CUST00358,66,4,2664.57,Customer 358,customer358@example.com,2023-03-17,2023-10-26,2,0,Regular
+CUST00359,63,6,7678.09,Customer 359,customer359@example.com,2023-02-25,2024-06-11,1,0,Regular
+CUST00360,37,4,5608.31,Customer 360,customer360@example.com,2024-02-08,2024-03-27,1,0,Medium Value
+CUST00361,213,8,10751.07,Customer 361,customer361@example.com,2023-08-19,2024-09-09,3,1,Regular
+CUST00362,161,6,5589.52,Customer 362,customer362@example.com,2023-09-21,2024-09-02,1,1,Regular
+CUST00363,0,9,10748.64,Customer 363,customer363@example.com,2024-10-22,2024-11-13,3,0,High Value
+CUST00364,155,5,6339.16,Customer 364,customer364@example.com,2024-01-01,2024-03-06,1,1,Regular
+CUST00365,198,3,5266.63,Customer 365,customer365@example.com,2024-12-25,2024-12-28,2,1,Regular
+CUST00366,483,4,4690.4800000000005,Customer 366,customer366@example.com,2023-05-18,2023-11-02,0,1,Regular
+CUST00367,115,4,3966.97,Customer 367,customer367@example.com,2024-09-26,2024-10-22,2,1,Regular
+CUST00368,303,3,3195.13,Customer 368,customer368@example.com,2023-10-31,2023-12-30,0,1,Regular
+CUST00369,13,6,6193.74,Customer 369,customer369@example.com,2023-09-18,2024-10-18,1,0,Medium Value
+CUST00370,61,7,11964.03,Customer 370,customer370@example.com,2024-10-13,2024-10-21,3,0,Regular
+CUST00371,51,10,13194.24,Customer 371,customer371@example.com,2023-09-15,2024-02-24,3,0,Medium Value
+CUST00372,125,7,3882.29,Customer 372,customer372@example.com,2023-01-06,2024-05-10,1,1,Regular
+CUST00373,47,6,8787.710000000001,Customer 373,customer373@example.com,2024-09-10,2024-11-25,1,0,Medium Value
+CUST00374,236,6,7108.96,Customer 374,customer374@example.com,2023-08-02,2024-05-20,1,1,Regular
+CUST00375,289,1,331.96,Customer 375,customer375@example.com,2024-05-10,2024-10-02,0,1,Low Value
+CUST00376,201,5,5783.7300000000005,Customer 376,customer376@example.com,2023-09-13,2024-06-24,1,1,Regular
+CUST00377,66,6,5508.04,Customer 377,customer377@example.com,2024-04-23,2024-09-06,1,0,Regular
+CUST00378,9,4,6963.650000000001,Customer 378,customer378@example.com,2023-01-20,2024-04-21,1,0,Medium Value
+CUST00379,356,2,1933.99,Customer 379,customer379@example.com,2023-06-04,2024-02-02,0,1,Regular
+CUST00380,536,1,1478.28,Customer 380,customer380@example.com,2024-04-18,2024-12-13,0,1,Low Value
+CUST00381,37,3,1809.87,Customer 381,customer381@example.com,2024-02-23,2024-06-22,2,0,Regular
+CUST00382,67,6,7183.04,Customer 382,customer382@example.com,2024-01-19,2024-02-18,1,0,Regular
+CUST00383,86,4,4546.67,Customer 383,customer383@example.com,2024-01-07,2024-04-01,2,0,Regular
+CUST00384,119,4,5630.17,Customer 384,customer384@example.com,2023-03-07,2024-07-06,2,1,Regular
+CUST00385,268,5,4853.68,Customer 385,customer385@example.com,2023-11-10,2024-02-10,0,1,Regular
+CUST00386,30,5,5998.98,Customer 386,customer386@example.com,2024-06-12,2024-12-03,1,0,Medium Value
+CUST00387,126,8,9525.76,Customer 387,customer387@example.com,2024-02-13,2024-04-16,3,1,Regular
+CUST00388,29,5,3618.81,Customer 388,customer388@example.com,2024-05-23,2024-12-12,2,0,Regular
+CUST00389,117,6,6394.3,Customer 389,customer389@example.com,2024-04-20,2024-11-03,1,1,Regular
+CUST00390,124,5,6758.25,Customer 390,customer390@example.com,2024-06-26,2024-07-01,1,1,Regular
+CUST00391,347,8,7941.21,Customer 391,customer391@example.com,2023-09-10,2023-09-21,3,1,Regular
+CUST00392,93,6,5104.47,Customer 392,customer392@example.com,2024-04-02,2024-04-28,1,1,Regular
+CUST00393,95,5,5704.14,Customer 393,customer393@example.com,2023-09-21,2024-10-08,1,1,Regular
+CUST00394,120,3,1597.35,Customer 394,customer394@example.com,2023-02-12,2023-05-04,2,1,Regular
+CUST00395,230,3,2422.76,Customer 395,customer395@example.com,2024-09-23,2024-12-18,2,1,Regular
+CUST00396,317,5,4870.27,Customer 396,customer396@example.com,2024-04-05,2024-07-27,0,1,Regular
+CUST00397,270,5,4187.87,Customer 397,customer397@example.com,2023-08-09,2024-11-08,0,1,Regular
+CUST00398,49,6,4851.82,Customer 398,customer398@example.com,2024-10-02,2024-10-30,1,0,Regular
+CUST00399,70,8,13884.77,Customer 399,customer399@example.com,2024-02-26,2024-10-25,3,0,Regular
+CUST00400,193,5,4303.95,Customer 400,customer400@example.com,2024-12-28,2024-12-30,2,1,Regular
+CUST00401,94,8,7637.95,Customer 401,customer401@example.com,2024-12-16,2024-12-29,3,1,Regular
+CUST00402,56,5,3494.41,Customer 402,customer402@example.com,2024-04-17,2024-07-25,2,0,Regular
+CUST00403,66,8,7094.55,Customer 403,customer403@example.com,2023-08-13,2024-12-04,1,0,Regular
+CUST00404,181,6,6324.47,Customer 404,customer404@example.com,2023-09-15,2024-11-03,1,1,Regular
+CUST00405,222,3,2591.16,Customer 405,customer405@example.com,2024-11-09,2024-12-03,2,1,Regular
+CUST00406,299,5,4160.07,Customer 406,customer406@example.com,2023-10-29,2024-02-03,0,1,Regular
+CUST00407,122,2,1437.8000000000002,Customer 407,customer407@example.com,2023-05-06,2023-12-19,2,1,Regular
+CUST00408,317,2,1750.0,Customer 408,customer408@example.com,2024-03-17,2024-05-25,0,1,Regular
+CUST00409,69,6,4525.31,Customer 409,customer409@example.com,2024-09-20,2024-12-10,1,0,Regular
+CUST00410,370,4,4501.54,Customer 410,customer410@example.com,2024-10-27,2024-12-06,0,1,Regular
+CUST00411,229,6,6783.74,Customer 411,customer411@example.com,2024-02-09,2024-10-03,1,1,Regular
+CUST00412,194,6,5079.1,Customer 412,customer412@example.com,2023-03-31,2024-02-02,1,1,Regular
+CUST00413,32,5,5420.62,Customer 413,customer413@example.com,2023-08-21,2024-09-01,1,0,Medium Value
+CUST00414,41,9,14817.66,Customer 414,customer414@example.com,2023-11-04,2024-01-22,3,0,Medium Value
+CUST00415,227,4,4052.96,Customer 415,customer415@example.com,2023-08-30,2024-05-22,2,1,Regular
+CUST00416,288,4,8916.279999999999,Customer 416,customer416@example.com,2024-06-27,2024-07-15,1,1,Regular
+CUST00417,25,7,6613.06,Customer 417,customer417@example.com,2023-02-27,2024-07-16,1,0,Medium Value
+CUST00418,133,2,3525.6,Customer 418,customer418@example.com,2024-09-03,2024-10-05,2,1,Regular
+CUST00419,300,5,5912.32,Customer 419,customer419@example.com,2023-12-30,2024-10-07,0,1,Regular
+CUST00420,132,3,2138.37,Customer 420,customer420@example.com,2023-06-23,2024-02-25,2,1,Regular
+CUST00421,44,8,13077.32,Customer 421,customer421@example.com,2024-03-13,2024-04-12,3,0,Medium Value
+CUST00422,413,3,1875.22,Customer 422,customer422@example.com,2024-02-16,2024-03-25,0,1,Regular
+CUST00423,56,3,4094.91,Customer 423,customer423@example.com,2023-10-25,2024-05-15,2,0,Regular
+CUST00424,512,1,1048.8,Customer 424,customer424@example.com,2023-06-07,2024-10-10,0,1,Low Value
+CUST00425,43,6,4632.82,Customer 425,customer425@example.com,2023-09-12,2023-11-18,1,0,Regular
+CUST00426,291,3,2640.83,Customer 426,customer426@example.com,2024-10-07,2024-12-11,0,1,Regular
+CUST00427,297,2,3327.0600000000004,Customer 427,customer427@example.com,2024-03-17,2024-09-11,0,1,Regular
+CUST00428,24,9,11555.01,Customer 428,customer428@example.com,2023-10-09,2024-10-09,3,0,High Value
+CUST00429,371,5,4434.07,Customer 429,customer429@example.com,2024-06-10,2024-10-09,0,1,Regular
+CUST00430,9,7,10080.44,Customer 430,customer430@example.com,2024-08-22,2024-12-29,3,0,High Value
+CUST00431,18,3,2902.3500000000004,Customer 431,customer431@example.com,2024-05-22,2024-08-02,2,0,Regular
+CUST00432,167,7,6974.9,Customer 432,customer432@example.com,2024-10-04,2024-10-26,1,1,Regular
+CUST00433,119,5,7295.580000000001,Customer 433,customer433@example.com,2023-07-20,2024-09-24,1,1,Regular
+CUST00434,275,7,5109.92,Customer 434,customer434@example.com,2024-05-17,2024-09-27,1,1,Regular
+CUST00435,158,3,4793.96,Customer 435,customer435@example.com,2023-04-06,2024-11-29,2,1,Regular
+CUST00436,9,5,7111.639999999999,Customer 436,customer436@example.com,2023-11-05,2023-12-29,1,0,Medium Value
+CUST00437,117,7,5505.25,Customer 437,customer437@example.com,2023-03-19,2024-07-02,1,1,Regular
+CUST00438,16,3,4262.64,Customer 438,customer438@example.com,2023-08-01,2024-02-19,2,0,Regular
+CUST00439,107,4,4045.25,Customer 439,customer439@example.com,2024-08-08,2024-12-03,2,1,Regular
+CUST00440,65,4,4786.29,Customer 440,customer440@example.com,2024-08-28,2024-11-09,2,0,Regular
+CUST00441,66,3,3947.24,Customer 441,customer441@example.com,2024-04-13,2024-08-20,2,0,Regular
+CUST00442,229,10,12172.83,Customer 442,customer442@example.com,2024-11-11,2024-11-16,3,1,Regular
+CUST00443,20,5,4725.26,Customer 443,customer443@example.com,2024-10-04,2024-10-06,1,0,Regular
+CUST00444,469,3,2801.36,Customer 444,customer444@example.com,2024-05-05,2024-09-10,0,1,Regular
+CUST00445,240,4,5044.969999999999,Customer 445,customer445@example.com,2024-06-08,2024-06-20,2,1,Regular
+CUST00446,86,4,2617.63,Customer 446,customer446@example.com,2023-02-18,2023-11-20,2,0,Regular
+CUST00447,3,8,6384.79,Customer 447,customer447@example.com,2023-11-24,2023-12-07,1,0,Medium Value
+CUST00448,28,2,1956.61,Customer 448,customer448@example.com,2024-01-07,2024-11-16,2,0,Regular
+CUST00449,240,3,3671.24,Customer 449,customer449@example.com,2023-07-15,2024-12-27,0,1,Regular
+CUST00450,405,2,2447.02,Customer 450,customer450@example.com,2024-07-28,2024-08-22,0,1,Regular
+CUST00451,109,5,1914.81,Customer 451,customer451@example.com,2023-04-10,2024-05-07,2,1,Regular
+CUST00452,52,4,3039.86,Customer 452,customer452@example.com,2023-07-02,2024-04-22,2,0,Regular
+CUST00453,3,3,3349.69,Customer 453,customer453@example.com,2023-07-13,2024-03-31,2,0,Regular
+CUST00454,113,9,8458.31,Customer 454,customer454@example.com,2024-10-30,2024-11-03,3,1,Regular
+CUST00455,19,9,12433.67,Customer 455,customer455@example.com,2024-09-03,2024-09-26,3,0,High Value
+CUST00456,154,2,1452.73,Customer 456,customer456@example.com,2024-02-23,2024-03-16,2,1,Regular
+CUST00457,28,4,6251.56,Customer 457,customer457@example.com,2024-10-12,2024-11-08,1,0,Medium Value
+CUST00458,17,7,10832.49,Customer 458,customer458@example.com,2024-04-16,2024-07-04,3,0,High Value
+CUST00459,136,8,7669.11,Customer 459,customer459@example.com,2023-10-08,2024-08-16,3,1,Regular
+CUST00460,94,7,11586.58,Customer 460,customer460@example.com,2024-01-27,2024-11-29,3,1,Regular
+CUST00461,112,6,9648.49,Customer 461,customer461@example.com,2024-10-05,2024-12-26,1,1,Regular
+CUST00462,63,5,5488.95,Customer 462,customer462@example.com,2024-02-21,2024-05-11,1,0,Regular
+CUST00463,84,3,2809.33,Customer 463,customer463@example.com,2024-10-11,2024-11-29,2,0,Regular
+CUST00464,368,2,2700.05,Customer 464,customer464@example.com,2023-08-24,2024-08-26,0,1,Regular
+CUST00465,191,2,266.14,Customer 465,customer465@example.com,2024-01-16,2024-07-16,2,1,Regular
+CUST00466,64,3,4120.83,Customer 466,customer466@example.com,2023-04-23,2024-08-25,2,0,Regular
+CUST00467,178,5,5724.65,Customer 467,customer467@example.com,2023-11-28,2024-06-06,1,1,Regular
+CUST00468,88,3,4272.93,Customer 468,customer468@example.com,2023-05-05,2023-06-02,2,0,Regular
+CUST00469,189,3,3455.2,Customer 469,customer469@example.com,2023-10-23,2024-12-13,2,1,Regular
+CUST00470,19,7,6495.83,Customer 470,customer470@example.com,2024-05-01,2024-12-12,1,0,Medium Value
+CUST00471,342,4,2116.73,Customer 471,customer471@example.com,2024-07-22,2024-11-08,0,1,Regular
+CUST00472,78,5,8956.56,Customer 472,customer472@example.com,2024-04-28,2024-10-31,1,0,Regular
+CUST00473,200,3,2226.15,Customer 473,customer473@example.com,2024-11-03,2024-11-29,2,1,Regular
+CUST00474,25,5,5489.12,Customer 474,customer474@example.com,2023-09-23,2023-11-15,1,0,Medium Value
+CUST00475,14,3,4255.58,Customer 475,customer475@example.com,2023-10-07,2024-10-16,2,0,Regular
+CUST00476,163,4,2971.66,Customer 476,customer476@example.com,2023-10-29,2024-02-10,2,1,Regular
+CUST00477,27,5,2899.69,Customer 477,customer477@example.com,2023-10-25,2024-01-09,2,0,Regular
+CUST00478,106,9,8359.13,Customer 478,customer478@example.com,2024-03-29,2024-08-09,3,1,Regular
+CUST00479,105,4,4414.88,Customer 479,customer479@example.com,2023-09-27,2023-11-28,2,1,Regular
+CUST00480,177,5,5302.78,Customer 480,customer480@example.com,2024-09-15,2024-12-02,1,1,Regular
+CUST00481,38,7,5272.16,Customer 481,customer481@example.com,2023-05-16,2024-10-01,1,0,Medium Value
+CUST00482,210,3,4544.299999999999,Customer 482,customer482@example.com,2023-05-27,2024-01-27,2,1,Regular
+CUST00483,58,6,7170.07,Customer 483,customer483@example.com,2024-12-01,2024-12-13,1,0,Medium Value
+CUST00484,39,4,7003.110000000001,Customer 484,customer484@example.com,2024-05-04,2024-11-14,1,0,Medium Value
+CUST00485,157,3,1736.09,Customer 485,customer485@example.com,2024-12-21,2024-12-25,2,1,Regular
+CUST00486,84,10,14310.72,Customer 486,customer486@example.com,2023-09-02,2023-10-23,3,0,Regular
+CUST00487,14,5,4246.610000000001,Customer 487,customer487@example.com,2023-07-22,2024-05-29,1,0,Regular
+CUST00488,2,7,5993.32,Customer 488,customer488@example.com,2023-03-24,2023-10-29,1,0,Medium Value
+CUST00489,66,5,4007.18,Customer 489,customer489@example.com,2023-04-30,2023-09-04,2,0,Regular
+CUST00490,179,3,1985.06,Customer 490,customer490@example.com,2023-04-27,2024-08-02,2,1,Regular
+CUST00491,14,7,6833.02,Customer 491,customer491@example.com,2024-08-13,2024-10-10,1,0,Medium Value
+CUST00492,45,4,5342.34,Customer 492,customer492@example.com,2024-08-06,2024-08-09,2,0,Medium Value
+CUST00493,257,6,11768.55,Customer 493,customer493@example.com,2024-10-07,2024-10-24,3,1,Regular
+CUST00494,154,4,5105.97,Customer 494,customer494@example.com,2023-04-02,2023-08-18,2,1,Regular
+CUST00495,423,1,1030.59,Customer 495,customer495@example.com,2023-10-30,2024-03-03,0,1,Low Value
+CUST00496,107,2,1251.13,Customer 496,customer496@example.com,2024-02-05,2024-04-07,2,1,Regular
+CUST00497,89,6,5414.379999999999,Customer 497,customer497@example.com,2024-10-25,2024-12-23,1,0,Regular
+CUST00498,96,9,8181.69,Customer 498,customer498@example.com,2023-03-24,2023-05-19,3,1,Regular
+CUST00499,105,5,5759.63,Customer 499,customer499@example.com,2024-01-10,2024-09-14,1,1,Regular
+CUST00500,473,3,3039.8900000000003,Customer 500,customer500@example.com,2023-10-08,2023-12-23,0,1,Regular
+CUST00501,29,6,5650.37,Customer 501,customer501@example.com,2023-12-23,2024-01-28,1,0,Medium Value
+CUST00502,96,2,3180.2200000000003,Customer 502,customer502@example.com,2023-05-21,2024-02-17,2,1,Regular
+CUST00503,21,3,3619.13,Customer 503,customer503@example.com,2024-05-10,2024-09-11,2,0,Regular
+CUST00504,126,5,3377.31,Customer 504,customer504@example.com,2024-10-26,2024-11-13,2,1,Regular
+CUST00505,51,7,7016.57,Customer 505,customer505@example.com,2023-11-13,2024-08-02,1,0,Medium Value
+CUST00506,115,1,1463.28,Customer 506,customer506@example.com,2024-06-12,2024-12-24,2,1,Low Value
+CUST00507,63,4,5997.15,Customer 507,customer507@example.com,2023-01-05,2024-04-07,1,0,Regular
+CUST00508,35,4,3735.24,Customer 508,customer508@example.com,2023-12-26,2023-12-26,2,0,Regular
+CUST00509,147,7,8436.66,Customer 509,customer509@example.com,2023-01-31,2023-08-21,1,1,Regular
+CUST00510,672,1,582.62,Customer 510,customer510@example.com,2024-06-21,2024-12-30,0,1,Low Value
+CUST00511,147,7,10957.09,Customer 511,customer511@example.com,2023-01-20,2024-09-24,3,1,Regular
+CUST00512,164,6,4543.9400000000005,Customer 512,customer512@example.com,2024-09-20,2024-11-27,1,1,Regular
+CUST00513,336,4,5410.15,Customer 513,customer513@example.com,2024-04-24,2024-12-27,0,1,Regular
+CUST00514,228,3,2166.6800000000003,Customer 514,customer514@example.com,2023-12-14,2024-06-10,2,1,Regular
+CUST00515,110,8,5914.17,Customer 515,customer515@example.com,2024-01-13,2024-02-23,1,1,Regular
+CUST00516,387,2,2282.72,Customer 516,customer516@example.com,2024-04-10,2024-12-05,0,1,Regular
+CUST00517,287,2,3152.37,Customer 517,customer517@example.com,2023-10-31,2024-06-20,0,1,Regular
+CUST00518,5,6,7488.12,Customer 518,customer518@example.com,2023-05-22,2024-03-30,1,0,High Value
+CUST00519,5,4,4860.8,Customer 519,customer519@example.com,2024-04-03,2024-09-23,2,0,Regular
+CUST00520,37,4,3687.56,Customer 520,customer520@example.com,2023-03-09,2024-10-11,2,0,Regular
+CUST00521,102,5,6716.64,Customer 521,customer521@example.com,2023-12-30,2024-02-19,1,1,Regular
+CUST00522,30,5,4412.07,Customer 522,customer522@example.com,2023-04-20,2023-07-16,1,0,Regular
+CUST00523,220,7,4194.21,Customer 523,customer523@example.com,2023-12-30,2024-05-14,1,1,Regular
+CUST00524,41,5,6534.469999999999,Customer 524,customer524@example.com,2024-05-11,2024-11-20,1,0,Medium Value
+CUST00525,70,4,3800.28,Customer 525,customer525@example.com,2023-08-26,2023-12-03,2,0,Regular
+CUST00526,84,5,8003.37,Customer 526,customer526@example.com,2023-10-22,2024-12-22,1,0,Regular
+CUST00527,0,8,6479.79,Customer 527,customer527@example.com,2024-01-19,2024-06-12,1,0,Medium Value
+CUST00528,213,6,7775.83,Customer 528,customer528@example.com,2023-09-02,2024-04-20,1,1,Regular
+CUST00529,40,5,3261.42,Customer 529,customer529@example.com,2024-04-10,2024-05-03,2,0,Regular
+CUST00530,167,4,5131.23,Customer 530,customer530@example.com,2024-08-25,2024-11-16,2,1,Regular
+CUST00531,5,7,6487.12,Customer 531,customer531@example.com,2023-02-08,2023-10-17,1,0,Medium Value
+CUST00532,205,6,6971.129999999999,Customer 532,customer532@example.com,2023-02-01,2023-02-12,1,1,Regular
+CUST00533,19,7,9699.11,Customer 533,customer533@example.com,2023-07-05,2024-06-25,3,0,High Value
+CUST00534,3,6,9479.91,Customer 534,customer534@example.com,2024-03-10,2024-10-26,1,0,High Value
+CUST00535,96,3,3138.9,Customer 535,customer535@example.com,2024-11-21,2024-12-24,2,1,Regular
+CUST00536,209,2,1511.87,Customer 536,customer536@example.com,2024-08-15,2024-11-07,2,1,Regular
+CUST00537,3,6,6156.33,Customer 537,customer537@example.com,2024-06-08,2024-11-19,1,0,Medium Value
+CUST00538,58,10,16551.0,Customer 538,customer538@example.com,2023-04-10,2023-05-10,3,0,Medium Value
+CUST00539,17,7,10495.15,Customer 539,customer539@example.com,2023-03-07,2024-04-19,3,0,High Value
+CUST00540,73,9,10585.35,Customer 540,customer540@example.com,2024-08-22,2024-12-06,3,0,Regular
+CUST00541,25,10,11269.43,Customer 541,customer541@example.com,2023-02-28,2024-11-26,3,0,High Value
+CUST00542,262,4,2548.49,Customer 542,customer542@example.com,2023-12-10,2024-09-14,0,1,Regular
+CUST00543,298,4,4113.08,Customer 543,customer543@example.com,2023-03-30,2024-11-23,0,1,Regular
+CUST00544,345,4,3493.36,Customer 544,customer544@example.com,2024-07-30,2024-11-20,0,1,Regular
+CUST00545,569,3,3531.36,Customer 545,customer545@example.com,2024-11-17,2024-12-01,0,1,Regular
+CUST00546,167,4,3267.6200000000003,Customer 546,customer546@example.com,2023-06-28,2024-04-15,2,1,Regular
+CUST00547,28,2,2288.91,Customer 547,customer547@example.com,2024-07-18,2024-12-24,2,0,Regular
+CUST00548,211,5,4589.24,Customer 548,customer548@example.com,2024-03-24,2024-05-11,1,1,Regular
+CUST00549,83,5,5711.88,Customer 549,customer549@example.com,2023-07-28,2024-05-19,1,0,Regular
+CUST00550,89,9,11256.73,Customer 550,customer550@example.com,2023-09-11,2024-02-29,3,0,Regular
+CUST00551,26,4,2554.89,Customer 551,customer551@example.com,2023-07-22,2024-06-14,2,0,Regular
+CUST00552,47,10,12756.36,Customer 552,customer552@example.com,2024-06-03,2024-11-05,3,0,Medium Value
+CUST00553,301,2,2729.67,Customer 553,customer553@example.com,2024-05-28,2024-10-03,0,1,Regular
+CUST00554,477,2,2094.35,Customer 554,customer554@example.com,2023-04-15,2023-07-11,0,1,Regular
+CUST00555,371,2,3404.32,Customer 555,customer555@example.com,2024-11-18,2024-12-28,0,1,Regular
+CUST00556,58,4,4116.62,Customer 556,customer556@example.com,2024-11-17,2024-12-23,2,0,Regular
+CUST00557,111,8,8951.49,Customer 557,customer557@example.com,2023-12-08,2024-03-09,3,1,Regular
+CUST00558,277,1,1038.24,Customer 558,customer558@example.com,2023-02-20,2024-12-20,0,1,Low Value
+CUST00559,215,5,4735.67,Customer 559,customer559@example.com,2023-05-24,2024-11-10,1,1,Regular
+CUST00560,207,3,3339.5,Customer 560,customer560@example.com,2023-10-27,2024-11-09,2,1,Regular
+CUST00561,230,4,5158.9,Customer 561,customer561@example.com,2023-02-25,2023-10-05,2,1,Regular
+CUST00562,129,5,7335.84,Customer 562,customer562@example.com,2024-03-18,2024-03-19,1,1,Regular
+CUST00563,134,4,3917.3,Customer 563,customer563@example.com,2023-09-22,2024-09-24,2,1,Regular
+CUST00564,278,2,2020.07,Customer 564,customer564@example.com,2023-02-27,2023-03-08,0,1,Regular
+CUST00565,17,6,8394.130000000001,Customer 565,customer565@example.com,2023-03-21,2024-09-04,1,0,High Value
+CUST00566,75,7,9348.98,Customer 566,customer566@example.com,2024-07-07,2024-09-08,3,0,Regular
+CUST00567,49,8,7390.89,Customer 567,customer567@example.com,2023-06-27,2024-08-07,3,0,Medium Value
+CUST00568,86,7,13171.77,Customer 568,customer568@example.com,2024-03-09,2024-05-31,3,0,Regular
+CUST00569,165,4,8387.83,Customer 569,customer569@example.com,2023-04-14,2024-05-03,1,1,Regular
+CUST00570,21,5,5968.21,Customer 570,customer570@example.com,2023-06-03,2024-01-05,1,0,Medium Value
+CUST00571,235,9,7315.94,Customer 571,customer571@example.com,2023-02-28,2024-02-07,3,1,Regular
+CUST00572,259,5,4011.88,Customer 572,customer572@example.com,2023-07-14,2024-02-13,0,1,Regular
+CUST00573,205,5,7474.63,Customer 573,customer573@example.com,2024-02-06,2024-07-16,1,1,Regular
+CUST00574,62,5,6635.31,Customer 574,customer574@example.com,2023-04-12,2023-06-25,1,0,Regular
+CUST00575,301,3,3465.81,Customer 575,customer575@example.com,2024-07-15,2024-09-15,0,1,Regular
+CUST00576,420,1,369.96,Customer 576,customer576@example.com,2024-09-10,2024-10-04,0,1,Low Value
+CUST00577,1,6,6084.83,Customer 577,customer577@example.com,2024-03-07,2024-11-08,1,0,Medium Value
+CUST00578,199,3,3206.84,Customer 578,customer578@example.com,2024-11-12,2024-12-09,2,1,Regular
+CUST00579,95,6,9525.6,Customer 579,customer579@example.com,2024-03-09,2024-11-25,1,1,Regular
+CUST00580,124,5,4970.74,Customer 580,customer580@example.com,2024-07-30,2024-10-30,1,1,Regular
+CUST00581,113,6,10573.99,Customer 581,customer581@example.com,2023-08-14,2024-06-20,3,1,Regular
+CUST00582,27,8,7851.53,Customer 582,customer582@example.com,2024-10-14,2024-11-12,3,0,High Value
+CUST00583,169,3,2616.13,Customer 583,customer583@example.com,2024-03-09,2024-11-30,2,1,Regular
+CUST00584,160,7,3710.91,Customer 584,customer584@example.com,2024-12-28,2024-12-29,1,1,Regular
+CUST00586,290,3,3321.32,Customer 586,customer586@example.com,2024-07-11,2024-12-24,0,1,Regular
+CUST00587,258,4,2232.74,Customer 587,customer587@example.com,2023-04-09,2024-05-10,0,1,Regular
+CUST00588,160,4,2680.45,Customer 588,customer588@example.com,2024-11-02,2024-11-23,2,1,Regular
+CUST00589,16,6,6651.53,Customer 589,customer589@example.com,2023-01-12,2024-02-15,1,0,Medium Value
+CUST00590,252,2,2464.32,Customer 590,customer590@example.com,2024-07-11,2024-12-18,0,1,Regular
+CUST00591,38,8,7159.53,Customer 591,customer591@example.com,2024-01-31,2024-10-19,1,0,Medium Value
+CUST00592,234,4,2068.9700000000003,Customer 592,customer592@example.com,2023-11-25,2024-07-23,2,1,Regular
+CUST00593,54,4,4086.97,Customer 593,customer593@example.com,2023-03-15,2023-08-09,2,0,Regular
+CUST00594,108,9,15959.07,Customer 594,customer594@example.com,2024-07-16,2024-11-29,3,1,Regular
+CUST00595,124,7,6786.66,Customer 595,customer595@example.com,2023-08-21,2024-05-14,1,1,Regular
+CUST00596,34,7,9905.75,Customer 596,customer596@example.com,2023-07-13,2024-12-02,3,0,Medium Value
+CUST00597,381,4,5008.86,Customer 597,customer597@example.com,2024-08-01,2024-09-05,0,1,Regular
+CUST00598,57,3,1405.87,Customer 598,customer598@example.com,2024-03-29,2024-12-26,2,0,Regular
+CUST00599,471,1,2772.8,Customer 599,customer599@example.com,2024-03-07,2024-10-31,0,1,Low Value
+CUST00600,77,3,3228.68,Customer 600,customer600@example.com,2024-06-25,2024-06-30,2,0,Regular
+CUST00601,89,5,5575.31,Customer 601,customer601@example.com,2023-05-14,2024-05-05,1,0,Regular
+CUST00602,317,1,376.92,Customer 602,customer602@example.com,2024-10-25,2024-12-22,0,1,Low Value
+CUST00603,190,4,3930.5,Customer 603,customer603@example.com,2024-02-11,2024-09-22,2,1,Regular
+CUST00604,23,8,9988.06,Customer 604,customer604@example.com,2024-12-09,2024-12-16,3,0,High Value
+CUST00605,68,8,13413.67,Customer 605,customer605@example.com,2024-09-09,2024-11-09,3,0,Regular
+CUST00606,138,8,9858.82,Customer 606,customer606@example.com,2024-01-18,2024-02-24,3,1,Regular
+CUST00607,40,9,6232.91,Customer 607,customer607@example.com,2024-07-03,2024-09-23,3,0,Medium Value
+CUST00608,5,6,6630.79,Customer 608,customer608@example.com,2023-09-26,2023-10-28,1,0,Medium Value
+CUST00609,352,4,2605.99,Customer 609,customer609@example.com,2023-04-30,2024-12-06,0,1,Regular
+CUST00610,211,5,2683.63,Customer 610,customer610@example.com,2023-05-07,2024-09-25,2,1,Regular
+CUST00611,13,7,6000.34,Customer 611,customer611@example.com,2023-04-30,2024-12-19,1,0,Medium Value
+CUST00612,113,9,8738.789999999999,Customer 612,customer612@example.com,2024-01-20,2024-07-24,3,1,Regular
+CUST00613,22,8,10606.12,Customer 613,customer613@example.com,2023-10-25,2024-01-16,3,0,High Value
+CUST00614,224,7,6029.049999999999,Customer 614,customer614@example.com,2024-06-23,2024-11-27,1,1,Regular
+CUST00615,21,4,4450.18,Customer 615,customer615@example.com,2023-05-26,2024-08-28,2,0,Regular
+CUST00616,260,4,1901.9,Customer 616,customer616@example.com,2024-06-23,2024-06-30,0,1,Regular
+CUST00617,164,7,4377.650000000001,Customer 617,customer617@example.com,2023-05-04,2024-09-04,1,1,Regular
+CUST00618,19,4,4587.02,Customer 618,customer618@example.com,2023-10-14,2023-10-28,2,0,Regular
+CUST00619,55,5,6538.61,Customer 619,customer619@example.com,2023-01-21,2023-08-30,1,0,Medium Value
+CUST00620,73,3,2929.31,Customer 620,customer620@example.com,2024-05-13,2024-07-20,2,0,Regular
+CUST00621,15,7,5713.219999999999,Customer 621,customer621@example.com,2023-04-10,2023-07-26,1,0,Medium Value
+CUST00622,460,5,8107.18,Customer 622,customer622@example.com,2023-07-06,2024-07-01,0,1,Regular
+CUST00623,241,5,6025.31,Customer 623,customer623@example.com,2023-01-19,2024-04-19,1,1,Regular
+CUST00624,120,2,2795.6400000000003,Customer 624,customer624@example.com,2024-01-01,2024-09-15,2,1,Regular
+CUST00625,160,4,2713.0,Customer 625,customer625@example.com,2023-07-02,2024-01-25,2,1,Regular
+CUST00626,468,4,3563.9800000000005,Customer 626,customer626@example.com,2024-12-24,2024-12-27,0,1,Regular
+CUST00627,68,6,8341.52,Customer 627,customer627@example.com,2023-01-28,2024-08-15,1,0,Regular
+CUST00628,90,4,6518.74,Customer 628,customer628@example.com,2024-09-07,2024-11-17,1,0,Regular
+CUST00629,243,3,4363.75,Customer 629,customer629@example.com,2023-09-24,2024-03-20,0,1,Regular
+CUST00630,277,5,5456.360000000001,Customer 630,customer630@example.com,2023-02-06,2023-12-11,0,1,Regular
+CUST00631,189,3,2513.67,Customer 631,customer631@example.com,2024-02-15,2024-06-01,2,1,Regular
+CUST00632,254,6,6450.27,Customer 632,customer632@example.com,2024-12-13,2024-12-19,1,1,Regular
+CUST00633,7,5,6222.22,Customer 633,customer633@example.com,2023-07-03,2024-07-05,1,0,Medium Value
+CUST00634,70,2,1676.32,Customer 634,customer634@example.com,2024-07-03,2024-08-07,2,0,Regular
+CUST00635,351,3,2184.5,Customer 635,customer635@example.com,2024-04-04,2024-10-12,0,1,Regular
+CUST00636,33,8,11922.27,Customer 636,customer636@example.com,2023-12-19,2024-08-25,3,0,Medium Value
+CUST00637,222,7,5720.92,Customer 637,customer637@example.com,2024-03-09,2024-07-10,1,1,Regular
+CUST00638,493,1,508.34,Customer 638,customer638@example.com,2024-05-03,2024-07-25,0,1,Low Value
+CUST00639,104,5,5051.07,Customer 639,customer639@example.com,2024-01-09,2024-09-02,1,1,Regular
+CUST00640,13,7,8460.65,Customer 640,customer640@example.com,2023-06-19,2024-10-08,3,0,High Value
+CUST00641,142,7,3497.76,Customer 641,customer641@example.com,2023-12-11,2024-02-16,1,1,Regular
+CUST00642,92,3,5450.2300000000005,Customer 642,customer642@example.com,2024-04-17,2024-10-06,2,1,Regular
+CUST00643,162,2,3122.31,Customer 643,customer643@example.com,2023-08-28,2024-05-03,2,1,Regular
+CUST00644,34,5,5677.71,Customer 644,customer644@example.com,2023-03-16,2023-11-06,1,0,Medium Value
+CUST00645,315,2,2498.04,Customer 645,customer645@example.com,2024-08-06,2024-10-15,0,1,Regular
+CUST00646,44,6,6826.44,Customer 646,customer646@example.com,2024-11-28,2024-12-08,1,0,Medium Value
+CUST00647,104,7,6856.08,Customer 647,customer647@example.com,2023-08-09,2024-06-16,1,1,Regular
+CUST00648,56,2,982.04,Customer 648,customer648@example.com,2024-06-01,2024-09-26,2,0,Regular
+CUST00649,365,11,10363.74,Customer 649,customer649@example.com,2024-03-28,2024-10-05,3,1,Regular
+CUST00650,479,3,1888.99,Customer 650,customer650@example.com,2023-01-17,2023-03-21,0,1,Regular
+CUST00651,72,4,4185.66,Customer 651,customer651@example.com,2024-12-25,2024-12-30,2,0,Regular
+CUST00652,110,3,4958.700000000001,Customer 652,customer652@example.com,2024-08-23,2024-12-17,2,1,Regular
+CUST00653,57,6,6409.43,Customer 653,customer653@example.com,2023-11-27,2024-03-05,1,0,Medium Value
+CUST00654,17,5,3208.62,Customer 654,customer654@example.com,2024-07-24,2024-12-03,2,0,Regular
+CUST00655,42,5,5982.54,Customer 655,customer655@example.com,2023-03-29,2024-12-13,1,0,Medium Value
+CUST00656,55,4,1353.83,Customer 656,customer656@example.com,2023-09-06,2023-10-23,2,0,Regular
+CUST00657,284,3,3056.36,Customer 657,customer657@example.com,2024-11-05,2024-11-23,0,1,Regular
+CUST00658,148,7,5282.32,Customer 658,customer658@example.com,2024-08-25,2024-10-28,1,1,Regular
+CUST00659,37,5,5642.01,Customer 659,customer659@example.com,2024-10-26,2024-11-18,1,0,Medium Value
+CUST00660,224,6,5329.81,Customer 660,customer660@example.com,2024-11-10,2024-12-10,1,1,Regular
+CUST00661,360,4,3769.06,Customer 661,customer661@example.com,2024-06-25,2024-07-26,0,1,Regular
+CUST00662,157,5,7004.96,Customer 662,customer662@example.com,2024-07-23,2024-08-16,1,1,Regular
+CUST00663,114,1,905.07,Customer 663,customer663@example.com,2023-05-30,2024-12-21,2,1,Low Value
+CUST00664,49,6,4585.84,Customer 664,customer664@example.com,2024-07-31,2024-10-14,1,0,Regular
+CUST00665,137,3,2356.19,Customer 665,customer665@example.com,2023-11-20,2023-12-20,2,1,Regular
+CUST00666,97,4,2933.23,Customer 666,customer666@example.com,2024-02-20,2024-05-01,2,1,Regular
+CUST00667,29,6,6992.679999999999,Customer 667,customer667@example.com,2023-02-20,2023-04-08,1,0,Medium Value
+CUST00668,23,7,6574.51,Customer 668,customer668@example.com,2024-12-25,2024-12-30,1,0,Medium Value
+CUST00669,88,6,6631.37,Customer 669,customer669@example.com,2023-07-15,2023-08-07,1,0,Regular
+CUST00670,204,6,5927.11,Customer 670,customer670@example.com,2023-11-05,2024-05-20,1,1,Regular
+CUST00671,203,5,2445.8500000000004,Customer 671,customer671@example.com,2023-06-25,2024-02-08,2,1,Regular
+CUST00672,46,7,6729.06,Customer 672,customer672@example.com,2023-01-15,2023-04-21,1,0,Medium Value
+CUST00673,101,5,7249.91,Customer 673,customer673@example.com,2024-01-16,2024-05-13,1,1,Regular
+CUST00674,57,4,3004.66,Customer 674,customer674@example.com,2024-08-02,2024-08-23,2,0,Regular
+CUST00675,348,4,4144.969999999999,Customer 675,customer675@example.com,2024-11-03,2024-11-24,0,1,Regular
+CUST00676,171,4,4988.33,Customer 676,customer676@example.com,2023-10-22,2024-03-28,2,1,Regular
+CUST00677,65,3,3383.12,Customer 677,customer677@example.com,2023-09-12,2023-10-22,2,0,Regular
+CUST00678,111,6,7993.83,Customer 678,customer678@example.com,2024-03-16,2024-08-06,1,1,Regular
+CUST00679,22,6,6959.1900000000005,Customer 679,customer679@example.com,2024-08-25,2024-09-11,1,0,Medium Value
+CUST00680,3,2,1778.51,Customer 680,customer680@example.com,2024-11-28,2024-12-02,2,0,Regular
+CUST00681,43,4,1170.16,Customer 681,customer681@example.com,2023-02-27,2024-11-06,2,0,Regular
+CUST00682,121,2,616.64,Customer 682,customer682@example.com,2023-02-07,2023-04-24,2,1,Regular
+CUST00683,66,3,2426.08,Customer 683,customer683@example.com,2023-11-25,2024-08-19,2,0,Regular
+CUST00684,150,6,3032.54,Customer 684,customer684@example.com,2023-09-09,2023-10-28,1,1,Regular
+CUST00685,137,7,7712.17,Customer 685,customer685@example.com,2023-02-05,2024-06-11,1,1,Regular
+CUST00686,29,5,5506.13,Customer 686,customer686@example.com,2024-04-10,2024-08-13,1,0,Medium Value
+CUST00687,331,2,2115.66,Customer 687,customer687@example.com,2024-06-02,2024-08-29,0,1,Regular
+CUST00688,31,5,2959.25,Customer 688,customer688@example.com,2024-09-23,2024-12-30,2,0,Regular
+CUST00689,59,4,1749.65,Customer 689,customer689@example.com,2023-04-29,2024-07-11,2,0,Regular
+CUST00690,74,5,6048.54,Customer 690,customer690@example.com,2024-07-09,2024-07-11,1,0,Regular
+CUST00691,51,4,2862.74,Customer 691,customer691@example.com,2023-05-30,2024-11-02,2,0,Regular
+CUST00692,74,3,3340.95,Customer 692,customer692@example.com,2024-01-15,2024-10-28,2,0,Regular
+CUST00693,196,4,6257.49,Customer 693,customer693@example.com,2024-03-26,2024-06-26,1,1,Regular
+CUST00694,129,8,8462.68,Customer 694,customer694@example.com,2023-04-17,2024-11-29,3,1,Regular
+CUST00695,239,3,2349.34,Customer 695,customer695@example.com,2024-11-20,2024-12-30,0,1,Regular
+CUST00696,294,4,8300.27,Customer 696,customer696@example.com,2024-03-20,2024-10-01,1,1,Regular
+CUST00697,12,9,7406.36,Customer 697,customer697@example.com,2024-05-08,2024-07-27,3,0,High Value
+CUST00698,102,9,9523.11,Customer 698,customer698@example.com,2024-08-29,2024-08-29,3,1,Regular
+CUST00699,118,10,13018.94,Customer 699,customer699@example.com,2023-06-06,2023-08-11,3,1,Regular
+CUST00700,221,2,1271.6999999999998,Customer 700,customer700@example.com,2024-07-21,2024-07-21,2,1,Regular
+CUST00701,225,5,6867.83,Customer 701,customer701@example.com,2023-05-15,2023-11-20,1,1,Regular
+CUST00702,54,7,5696.62,Customer 702,customer702@example.com,2023-02-03,2023-07-30,1,0,Medium Value
+CUST00703,305,6,7232.9,Customer 703,customer703@example.com,2024-07-11,2024-09-07,1,1,Regular
+CUST00704,60,1,2151.44,Customer 704,customer704@example.com,2024-01-18,2024-04-10,2,0,Regular
+CUST00705,655,1,1547.88,Customer 705,customer705@example.com,2023-12-18,2024-06-05,0,1,Low Value
+CUST00706,171,8,8422.12,Customer 706,customer706@example.com,2023-06-11,2024-10-24,3,1,Regular
+CUST00707,412,1,1385.56,Customer 707,customer707@example.com,2023-07-15,2023-09-30,0,1,Low Value
+CUST00708,190,11,12618.94,Customer 708,customer708@example.com,2023-04-27,2024-12-09,3,1,Regular
+CUST00709,11,7,9165.66,Customer 709,customer709@example.com,2023-06-01,2023-11-28,3,0,High Value
+CUST00710,120,5,5770.97,Customer 710,customer710@example.com,2023-11-18,2024-11-10,1,1,Regular
+CUST00711,186,6,2917.41,Customer 711,customer711@example.com,2023-07-29,2024-07-08,2,1,Regular
+CUST00712,371,5,6686.639999999999,Customer 712,customer712@example.com,2023-08-21,2023-10-05,0,1,Regular
+CUST00713,58,4,4733.6,Customer 713,customer713@example.com,2024-04-29,2024-06-03,2,0,Regular
+CUST00714,87,6,3960.58,Customer 714,customer714@example.com,2023-09-28,2024-01-26,1,0,Regular
+CUST00715,131,5,5791.31,Customer 715,customer715@example.com,2023-10-06,2024-10-27,1,1,Regular
+CUST00716,517,4,3741.55,Customer 716,customer716@example.com,2024-03-07,2024-11-19,0,1,Regular
+CUST00717,19,9,9509.93,Customer 717,customer717@example.com,2023-04-15,2023-09-29,3,0,High Value
+CUST00718,335,4,3647.33,Customer 718,customer718@example.com,2023-09-02,2024-05-02,0,1,Regular
+CUST00719,471,3,2003.6,Customer 719,customer719@example.com,2024-02-09,2024-09-28,0,1,Regular
+CUST00720,11,6,8891.0,Customer 720,customer720@example.com,2024-07-21,2024-11-15,1,0,High Value
+CUST00721,86,4,7013.5,Customer 721,customer721@example.com,2024-11-12,2024-12-28,1,0,Regular
+CUST00723,43,3,3126.83,Customer 723,customer723@example.com,2024-02-23,2024-11-30,2,0,Regular
+CUST00724,465,1,686.96,Customer 724,customer724@example.com,2023-10-23,2024-04-07,0,1,Low Value
+CUST00725,329,4,5998.08,Customer 725,customer725@example.com,2024-02-22,2024-06-03,0,1,Regular
+CUST00726,196,5,4109.1,Customer 726,customer726@example.com,2023-06-09,2023-11-05,2,1,Regular
+CUST00727,89,5,6304.22,Customer 727,customer727@example.com,2023-08-07,2023-10-09,1,0,Regular
+CUST00728,75,11,10874.69,Customer 728,customer728@example.com,2023-08-27,2024-02-25,3,0,Regular
+CUST00729,111,3,1114.66,Customer 729,customer729@example.com,2024-07-05,2024-10-15,2,1,Regular
+CUST00730,198,5,5843.700000000001,Customer 730,customer730@example.com,2023-08-13,2024-12-07,1,1,Regular
+CUST00731,102,4,3467.76,Customer 731,customer731@example.com,2023-02-04,2023-05-26,2,1,Regular
+CUST00732,21,8,9454.8,Customer 732,customer732@example.com,2023-03-20,2024-01-25,3,0,High Value
+CUST00733,197,5,3092.32,Customer 733,customer733@example.com,2024-07-03,2024-09-10,2,1,Regular
+CUST00734,121,2,2815.11,Customer 734,customer734@example.com,2023-06-10,2024-03-08,2,1,Regular
+CUST00735,22,6,3948.36,Customer 735,customer735@example.com,2024-11-23,2024-11-28,1,0,Regular
+CUST00736,249,3,1207.28,Customer 736,customer736@example.com,2024-05-14,2024-08-10,0,1,Regular
+CUST00737,116,5,6669.0,Customer 737,customer737@example.com,2024-03-07,2024-05-23,1,1,Regular
+CUST00738,102,5,4740.88,Customer 738,customer738@example.com,2024-02-27,2024-07-04,1,1,Regular
+CUST00739,75,3,1758.01,Customer 739,customer739@example.com,2024-07-19,2024-08-31,2,0,Regular
+CUST00740,15,8,8338.11,Customer 740,customer740@example.com,2023-12-19,2023-12-23,3,0,High Value
+CUST00742,115,7,11327.67,Customer 742,customer742@example.com,2023-08-22,2023-11-14,3,1,Regular
+CUST00743,140,12,11615.76,Customer 743,customer743@example.com,2024-08-22,2024-11-17,3,1,Regular
+CUST00744,120,4,4864.13,Customer 744,customer744@example.com,2023-07-20,2024-04-02,2,1,Regular
+CUST00745,35,4,3187.74,Customer 745,customer745@example.com,2024-02-03,2024-07-12,2,0,Regular
+CUST00746,228,8,8163.780000000001,Customer 746,customer746@example.com,2023-10-26,2024-09-29,3,1,Regular
+CUST00747,1,3,1135.62,Customer 747,customer747@example.com,2024-01-19,2024-11-12,2,0,Regular
+CUST00748,252,6,7396.22,Customer 748,customer748@example.com,2024-12-29,2024-12-29,1,1,Regular
+CUST00749,214,6,4007.13,Customer 749,customer749@example.com,2023-04-19,2023-10-03,1,1,Regular
+CUST00750,276,1,79.3,Customer 750,customer750@example.com,2023-10-07,2024-11-15,0,1,Low Value
+CUST00751,11,6,4562.58,Customer 751,customer751@example.com,2024-08-08,2024-08-16,1,0,Regular
+CUST00752,299,5,5054.64,Customer 752,customer752@example.com,2023-02-09,2024-04-29,0,1,Regular
+CUST00753,152,7,5304.099999999999,Customer 753,customer753@example.com,2023-11-18,2024-01-04,1,1,Regular
+CUST00754,26,4,3800.4,Customer 754,customer754@example.com,2024-01-30,2024-12-08,2,0,Regular
+CUST00755,173,1,683.96,Customer 755,customer755@example.com,2023-02-02,2023-08-09,2,1,Low Value
+CUST00756,147,7,7365.18,Customer 756,customer756@example.com,2024-07-02,2024-08-19,1,1,Regular
+CUST00757,243,4,2807.64,Customer 757,customer757@example.com,2023-09-18,2024-11-05,0,1,Regular
+CUST00758,10,6,7086.33,Customer 758,customer758@example.com,2024-05-23,2024-06-07,1,0,Medium Value
+CUST00759,8,4,3832.36,Customer 759,customer759@example.com,2023-12-21,2024-03-29,2,0,Regular
+CUST00760,294,3,4623.429999999999,Customer 760,customer760@example.com,2024-03-03,2024-08-26,0,1,Regular
+CUST00761,19,6,6162.73,Customer 761,customer761@example.com,2023-05-31,2024-03-18,1,0,Medium Value
+CUST00762,202,7,6264.9,Customer 762,customer762@example.com,2023-02-08,2023-06-09,1,1,Regular
+CUST00763,235,7,11122.19,Customer 763,customer763@example.com,2023-03-11,2024-02-22,3,1,Regular
+CUST00764,72,6,9954.17,Customer 764,customer764@example.com,2024-10-21,2024-11-01,3,0,Regular
+CUST00765,150,4,5382.92,Customer 765,customer765@example.com,2024-01-11,2024-06-21,2,1,Regular
+CUST00766,147,3,4632.06,Customer 766,customer766@example.com,2023-09-22,2024-08-24,2,1,Regular
+CUST00767,84,11,14103.38,Customer 767,customer767@example.com,2024-01-27,2024-06-23,3,0,Regular
+CUST00768,6,7,7496.88,Customer 768,customer768@example.com,2024-10-09,2024-11-17,1,0,High Value
+CUST00769,28,5,9273.01,Customer 769,customer769@example.com,2023-03-05,2023-12-02,1,0,Medium Value
+CUST00770,694,1,2281.56,Customer 770,customer770@example.com,2023-07-22,2024-03-30,0,1,Low Value
+CUST00771,123,5,7736.25,Customer 771,customer771@example.com,2023-01-07,2024-09-14,1,1,Regular
+CUST00772,213,5,2724.63,Customer 772,customer772@example.com,2023-10-17,2023-10-31,2,1,Regular
+CUST00773,45,6,8123.05,Customer 773,customer773@example.com,2023-09-30,2024-04-16,1,0,Medium Value
+CUST00774,49,4,1883.58,Customer 774,customer774@example.com,2023-04-11,2023-09-07,2,0,Regular
+CUST00775,396,4,5409.99,Customer 775,customer775@example.com,2023-07-07,2024-08-25,0,1,Regular
+CUST00776,7,7,5071.38,Customer 776,customer776@example.com,2023-12-31,2024-10-14,1,0,Medium Value
+CUST00777,92,6,7044.83,Customer 777,customer777@example.com,2024-08-28,2024-10-03,1,1,Regular
+CUST00778,296,3,2671.61,Customer 778,customer778@example.com,2024-11-04,2024-12-22,0,1,Regular
+CUST00779,11,8,10327.14,Customer 779,customer779@example.com,2023-06-01,2024-07-28,3,0,High Value
+CUST00780,252,5,5087.09,Customer 780,customer780@example.com,2023-09-18,2023-12-29,1,1,Regular
+CUST00781,118,6,7961.33,Customer 781,customer781@example.com,2023-05-09,2024-05-19,1,1,Regular
+CUST00782,66,3,1247.9,Customer 782,customer782@example.com,2023-11-26,2024-02-06,2,0,Regular
+CUST00783,111,8,8257.2,Customer 783,customer783@example.com,2023-02-02,2024-11-04,3,1,Regular
+CUST00784,104,5,4174.36,Customer 784,customer784@example.com,2024-02-26,2024-05-30,2,1,Regular
+CUST00785,368,4,3520.51,Customer 785,customer785@example.com,2024-01-23,2024-04-07,0,1,Regular
+CUST00786,66,5,5062.13,Customer 786,customer786@example.com,2024-09-22,2024-12-04,1,0,Regular
+CUST00787,6,4,4750.099999999999,Customer 787,customer787@example.com,2024-10-06,2024-12-16,2,0,Regular
+CUST00788,54,7,8445.72,Customer 788,customer788@example.com,2023-02-09,2024-05-10,3,0,Medium Value
+CUST00789,6,10,11496.43,Customer 789,customer789@example.com,2023-12-16,2024-10-20,3,0,High Value
+CUST00790,136,3,2791.92,Customer 790,customer790@example.com,2023-01-27,2023-03-02,2,1,Regular
+CUST00791,81,4,6933.22,Customer 791,customer791@example.com,2024-07-14,2024-11-03,1,0,Regular
+CUST00792,63,6,5328.26,Customer 792,customer792@example.com,2024-12-04,2024-12-26,1,0,Regular
+CUST00793,90,2,3097.32,Customer 793,customer793@example.com,2023-09-15,2024-10-30,2,0,Regular
+CUST00794,239,4,5814.1900000000005,Customer 794,customer794@example.com,2023-05-17,2024-11-27,1,1,Regular
+CUST00795,121,7,9333.31,Customer 795,customer795@example.com,2023-09-13,2024-09-13,3,1,Regular
+CUST00796,238,7,7266.56,Customer 796,customer796@example.com,2024-09-18,2024-11-22,1,1,Regular
+CUST00797,309,2,2694.0,Customer 797,customer797@example.com,2023-06-16,2024-12-28,0,1,Regular
+CUST00798,32,3,2275.35,Customer 798,customer798@example.com,2023-01-23,2024-08-09,2,0,Regular
+CUST00799,100,5,6069.79,Customer 799,customer799@example.com,2024-12-23,2024-12-30,1,1,Regular
+CUST00800,109,9,9192.98,Customer 800,customer800@example.com,2024-11-13,2024-12-01,3,1,Regular
+CUST00801,42,9,12157.09,Customer 801,customer801@example.com,2024-05-02,2024-06-22,3,0,Medium Value
+CUST00802,10,9,9620.19,Customer 802,customer802@example.com,2024-09-21,2024-10-21,3,0,High Value
+CUST00803,616,1,1571.64,Customer 803,customer803@example.com,2023-07-08,2024-04-09,0,1,Low Value
+CUST00804,162,7,7598.12,Customer 804,customer804@example.com,2023-07-23,2024-07-09,1,1,Regular
+CUST00805,37,3,1708.24,Customer 805,customer805@example.com,2024-05-20,2024-09-15,2,0,Regular
+CUST00806,164,8,5617.53,Customer 806,customer806@example.com,2024-06-25,2024-12-30,1,1,Regular
+CUST00807,595,3,722.3500000000001,Customer 807,customer807@example.com,2024-11-02,2024-11-06,0,1,Regular
+CUST00808,151,8,6555.73,Customer 808,customer808@example.com,2023-08-03,2023-09-15,1,1,Regular
+CUST00809,51,8,10531.03,Customer 809,customer809@example.com,2024-07-29,2024-12-07,3,0,Medium Value
+CUST00810,32,7,5664.9,Customer 810,customer810@example.com,2023-09-14,2024-05-26,1,0,Medium Value
+CUST00811,128,5,7194.92,Customer 811,customer811@example.com,2024-01-12,2024-03-20,1,1,Regular
+CUST00812,5,10,11722.0,Customer 812,customer812@example.com,2024-10-24,2024-11-26,3,0,High Value
+CUST00813,93,7,6637.54,Customer 813,customer813@example.com,2023-01-08,2024-12-14,1,1,Regular
+CUST00814,20,8,9059.93,Customer 814,customer814@example.com,2023-10-16,2024-03-31,3,0,High Value
+CUST00815,130,1,512.44,Customer 815,customer815@example.com,2023-08-05,2024-01-24,2,1,Low Value
+CUST00816,130,10,11532.47,Customer 816,customer816@example.com,2024-04-14,2024-05-28,3,1,Regular
+CUST00817,448,3,2289.28,Customer 817,customer817@example.com,2023-01-19,2024-07-18,0,1,Regular
+CUST00818,69,5,3914.28,Customer 818,customer818@example.com,2023-11-21,2024-04-25,2,0,Regular
+CUST00819,9,3,4059.34,Customer 819,customer819@example.com,2023-06-29,2023-11-30,2,0,Regular
+CUST00820,312,8,9720.82,Customer 820,customer820@example.com,2023-05-08,2024-08-06,3,1,Regular
+CUST00821,189,6,5811.3,Customer 821,customer821@example.com,2023-10-11,2023-12-01,1,1,Regular
+CUST00822,85,4,2037.62,Customer 822,customer822@example.com,2024-01-06,2024-12-04,2,0,Regular
+CUST00823,203,5,4860.98,Customer 823,customer823@example.com,2023-04-26,2024-09-03,1,1,Regular
+CUST00824,120,2,385.49,Customer 824,customer824@example.com,2023-08-26,2023-12-10,2,1,Regular
+CUST00825,14,7,6761.38,Customer 825,customer825@example.com,2023-04-19,2023-05-13,1,0,Medium Value
+CUST00826,143,2,3558.88,Customer 826,customer826@example.com,2023-03-09,2023-07-26,2,1,Regular
+CUST00827,45,8,7454.67,Customer 827,customer827@example.com,2023-02-18,2024-06-23,3,0,Medium Value
+CUST00828,141,4,4155.66,Customer 828,customer828@example.com,2024-12-23,2024-12-30,2,1,Regular
+CUST00829,252,4,3145.94,Customer 829,customer829@example.com,2023-06-03,2024-10-11,0,1,Regular
+CUST00830,1,5,4785.52,Customer 830,customer830@example.com,2023-07-13,2024-12-30,1,0,Regular
+CUST00831,27,3,3229.08,Customer 831,customer831@example.com,2024-01-19,2024-06-20,2,0,Regular
+CUST00832,124,6,5836.28,Customer 832,customer832@example.com,2024-12-01,2024-12-13,1,1,Regular
+CUST00833,181,2,2227.92,Customer 833,customer833@example.com,2024-07-04,2024-07-19,2,1,Regular
+CUST00834,119,3,3281.88,Customer 834,customer834@example.com,2023-03-03,2023-10-26,2,1,Regular
+CUST00835,108,5,5804.54,Customer 835,customer835@example.com,2024-06-05,2024-06-25,1,1,Regular
+CUST00836,85,5,5987.74,Customer 836,customer836@example.com,2023-11-13,2024-05-09,1,0,Regular
+CUST00837,113,4,2393.26,Customer 837,customer837@example.com,2023-10-25,2024-04-23,2,1,Regular
+CUST00838,1,3,2912.98,Customer 838,customer838@example.com,2023-04-08,2024-05-31,2,0,Regular
+CUST00839,159,6,9170.2,Customer 839,customer839@example.com,2023-01-18,2023-11-29,1,1,Regular
+CUST00840,270,5,4667.09,Customer 840,customer840@example.com,2023-06-22,2024-06-30,0,1,Regular
+CUST00841,46,4,6015.049999999999,Customer 841,customer841@example.com,2024-03-15,2024-09-03,1,0,Medium Value
+CUST00842,107,3,4590.8,Customer 842,customer842@example.com,2023-01-23,2024-09-28,2,1,Regular
+CUST00843,257,6,5502.12,Customer 843,customer843@example.com,2023-06-18,2024-11-06,1,1,Regular
+CUST00844,45,8,8521.66,Customer 844,customer844@example.com,2023-02-23,2023-11-07,3,0,Medium Value
+CUST00845,257,4,4410.78,Customer 845,customer845@example.com,2024-07-30,2024-09-04,0,1,Regular
+CUST00846,104,11,6583.59,Customer 846,customer846@example.com,2024-12-08,2024-12-24,3,1,Regular
+CUST00847,54,4,6003.070000000001,Customer 847,customer847@example.com,2024-07-04,2024-07-06,1,0,Medium Value
+CUST00848,16,7,8190.67,Customer 848,customer848@example.com,2023-01-09,2023-03-20,1,0,High Value
+CUST00849,2,5,7918.04,Customer 849,customer849@example.com,2023-07-06,2024-02-20,1,0,Medium Value
+CUST00850,459,5,5991.83,Customer 850,customer850@example.com,2024-05-07,2024-05-07,0,1,Regular
+CUST00851,119,3,3342.33,Customer 851,customer851@example.com,2024-08-20,2024-11-11,2,1,Regular
+CUST00852,4,5,5444.31,Customer 852,customer852@example.com,2024-06-16,2024-07-18,1,0,Medium Value
+CUST00853,118,4,2372.68,Customer 853,customer853@example.com,2023-01-09,2023-05-29,2,1,Regular
+CUST00854,532,3,4868.27,Customer 854,customer854@example.com,2023-06-22,2023-08-31,0,1,Regular
+CUST00855,109,1,2736.96,Customer 855,customer855@example.com,2024-04-05,2024-07-09,2,1,Low Value
+CUST00856,300,3,3090.13,Customer 856,customer856@example.com,2024-11-24,2024-11-26,0,1,Regular
+CUST00857,71,5,7490.72,Customer 857,customer857@example.com,2024-02-13,2024-06-20,1,0,Regular
+CUST00858,41,7,9435.91,Customer 858,customer858@example.com,2024-02-14,2024-10-20,3,0,Medium Value
+CUST00859,105,8,4613.75,Customer 859,customer859@example.com,2023-10-10,2024-10-31,1,1,Regular
+CUST00860,209,5,5668.32,Customer 860,customer860@example.com,2023-05-25,2024-12-21,1,1,Regular
+CUST00861,214,5,3433.6,Customer 861,customer861@example.com,2024-09-05,2024-11-09,2,1,Regular
+CUST00862,136,11,11528.94,Customer 862,customer862@example.com,2024-10-09,2024-11-26,3,1,Regular
+CUST00863,42,6,10386.69,Customer 863,customer863@example.com,2023-04-20,2023-11-19,3,0,Medium Value
+CUST00864,165,6,4961.01,Customer 864,customer864@example.com,2024-04-20,2024-05-15,1,1,Regular
+CUST00865,170,13,7311.22,Customer 865,customer865@example.com,2023-08-05,2024-12-23,3,1,Regular
+CUST00866,52,4,5429.09,Customer 866,customer866@example.com,2024-05-13,2024-05-25,2,0,Medium Value
+CUST00867,478,3,972.26,Customer 867,customer867@example.com,2024-05-17,2024-06-01,0,1,Regular
+CUST00868,64,2,942.53,Customer 868,customer868@example.com,2024-02-15,2024-03-23,2,0,Regular
+CUST00869,266,3,4078.59,Customer 869,customer869@example.com,2023-08-06,2024-09-17,0,1,Regular
+CUST00870,197,2,478.15,Customer 870,customer870@example.com,2023-09-20,2024-11-25,2,1,Regular
+CUST00871,19,8,7658.530000000001,Customer 871,customer871@example.com,2024-09-22,2024-09-25,3,0,High Value
+CUST00872,16,6,9574.1,Customer 872,customer872@example.com,2024-06-18,2024-10-22,1,0,High Value
+CUST00873,81,6,7076.98,Customer 873,customer873@example.com,2024-10-23,2024-12-19,1,0,Regular
+CUST00874,339,4,1522.39,Customer 874,customer874@example.com,2024-04-03,2024-08-25,0,1,Regular
+CUST00875,182,4,2776.77,Customer 875,customer875@example.com,2024-12-06,2024-12-07,2,1,Regular
+CUST00876,49,3,2900.4,Customer 876,customer876@example.com,2023-01-25,2023-03-24,2,0,Regular
+CUST00877,24,8,2858.84,Customer 877,customer877@example.com,2024-04-27,2024-11-15,1,0,Regular
+CUST00878,435,6,5638.36,Customer 878,customer878@example.com,2023-08-11,2024-05-04,0,1,Regular
+CUST00879,229,5,4161.62,Customer 879,customer879@example.com,2024-10-17,2024-12-03,2,1,Regular
+CUST00880,20,6,7813.46,Customer 880,customer880@example.com,2024-08-21,2024-11-04,1,0,High Value
+CUST00881,112,1,2303.9700000000003,Customer 881,customer881@example.com,2023-07-17,2024-12-20,2,1,Low Value
+CUST00882,47,4,4721.13,Customer 882,customer882@example.com,2024-04-27,2024-08-08,2,0,Regular
+CUST00883,57,4,5177.8,Customer 883,customer883@example.com,2024-11-30,2024-12-23,2,0,Medium Value
+CUST00884,65,2,3098.6,Customer 884,customer884@example.com,2024-10-31,2024-11-14,2,0,Regular
+CUST00885,495,3,4659.290000000001,Customer 885,customer885@example.com,2023-09-24,2024-10-09,0,1,Regular
+CUST00886,101,6,6967.91,Customer 886,customer886@example.com,2023-12-25,2024-11-12,1,1,Regular
+CUST00887,165,5,2372.58,Customer 887,customer887@example.com,2023-02-22,2023-09-15,2,1,Regular
+CUST00888,62,3,5121.2,Customer 888,customer888@example.com,2023-01-25,2024-04-10,2,0,Regular
+CUST00889,83,5,4889.66,Customer 889,customer889@example.com,2024-03-05,2024-04-08,1,0,Regular
+CUST00890,250,4,1812.98,Customer 890,customer890@example.com,2024-08-14,2024-12-27,0,1,Regular
+CUST00891,16,11,16680.97,Customer 891,customer891@example.com,2024-10-26,2024-10-26,3,0,High Value
+CUST00892,227,6,5469.82,Customer 892,customer892@example.com,2024-01-01,2024-08-13,1,1,Regular
+CUST00893,177,2,3174.87,Customer 893,customer893@example.com,2023-01-28,2024-02-23,2,1,Regular
+CUST00894,180,7,4114.9400000000005,Customer 894,customer894@example.com,2024-01-23,2024-01-29,1,1,Regular
+CUST00895,123,5,3174.01,Customer 895,customer895@example.com,2024-07-14,2024-12-15,2,1,Regular
+CUST00896,245,7,8864.32,Customer 896,customer896@example.com,2024-10-07,2024-11-17,3,1,Regular
+CUST00897,447,3,2393.61,Customer 897,customer897@example.com,2023-07-05,2024-10-08,0,1,Regular
+CUST00898,57,10,8059.37,Customer 898,customer898@example.com,2023-12-16,2024-06-23,3,0,Medium Value
+CUST00899,11,6,9146.03,Customer 899,customer899@example.com,2023-02-06,2023-04-30,1,0,High Value
+CUST00900,7,10,8679.18,Customer 900,customer900@example.com,2023-02-08,2023-05-29,3,0,High Value
+CUST00901,192,8,11348.17,Customer 901,customer901@example.com,2024-02-15,2024-08-12,3,1,Regular
+CUST00902,76,3,2401.98,Customer 902,customer902@example.com,2024-12-18,2024-12-30,2,0,Regular
+CUST00903,177,3,3341.6,Customer 903,customer903@example.com,2024-10-10,2024-10-28,2,1,Regular
+CUST00904,57,3,1672.76,Customer 904,customer904@example.com,2024-11-14,2024-11-17,2,0,Regular
+CUST00905,421,1,843.8399999999999,Customer 905,customer905@example.com,2023-03-09,2023-12-12,0,1,Low Value
+CUST00906,3,5,4880.81,Customer 906,customer906@example.com,2024-10-22,2024-12-21,1,0,Regular
+CUST00907,67,4,3644.06,Customer 907,customer907@example.com,2024-07-19,2024-07-23,2,0,Regular
+CUST00908,15,3,3534.56,Customer 908,customer908@example.com,2023-08-20,2024-04-05,2,0,Regular
+CUST00909,179,4,4256.38,Customer 909,customer909@example.com,2024-10-28,2024-11-22,2,1,Regular
+CUST00910,15,7,7000.4400000000005,Customer 910,customer910@example.com,2024-06-01,2024-12-06,1,0,Medium Value
+CUST00911,237,2,1330.62,Customer 911,customer911@example.com,2023-02-28,2024-05-19,0,1,Regular
+CUST00912,312,4,3820.17,Customer 912,customer912@example.com,2024-07-05,2024-11-25,0,1,Regular
+CUST00913,410,1,1028.72,Customer 913,customer913@example.com,2024-07-10,2024-10-09,0,1,Low Value
+CUST00914,62,5,7648.24,Customer 914,customer914@example.com,2023-05-22,2023-09-02,1,0,Regular
+CUST00915,273,8,10738.13,Customer 915,customer915@example.com,2024-12-09,2024-12-15,3,1,Regular
+CUST00916,403,5,4195.04,Customer 916,customer916@example.com,2024-11-26,2024-11-29,0,1,Regular
+CUST00917,486,3,3276.11,Customer 917,customer917@example.com,2024-07-27,2024-09-30,0,1,Regular
+CUST00918,362,5,4743.21,Customer 918,customer918@example.com,2024-12-26,2024-12-27,0,1,Regular
+CUST00919,47,6,8085.96,Customer 919,customer919@example.com,2023-02-07,2023-06-17,1,0,Medium Value
+CUST00920,238,2,2631.24,Customer 920,customer920@example.com,2024-10-07,2024-11-11,0,1,Regular
+CUST00921,171,5,6244.98,Customer 921,customer921@example.com,2024-11-21,2024-12-12,1,1,Regular
+CUST00922,7,8,7597.19,Customer 922,customer922@example.com,2024-04-19,2024-11-23,3,0,High Value
+CUST00923,22,5,6642.24,Customer 923,customer923@example.com,2024-12-15,2024-12-27,1,0,Medium Value
+CUST00924,76,6,4719.79,Customer 924,customer924@example.com,2023-08-25,2024-03-25,1,0,Regular
+CUST00925,55,4,4493.33,Customer 925,customer925@example.com,2024-04-22,2024-09-06,2,0,Regular
+CUST00926,125,6,2589.74,Customer 926,customer926@example.com,2023-10-04,2024-07-04,2,1,Regular
+CUST00927,48,11,12035.96,Customer 927,customer927@example.com,2023-11-12,2024-04-27,3,0,Medium Value
+CUST00928,2,9,11387.58,Customer 928,customer928@example.com,2024-10-31,2024-11-28,3,0,High Value
+CUST00929,3,2,1477.54,Customer 929,customer929@example.com,2023-07-11,2024-11-24,2,0,Regular
+CUST00930,345,4,5636.91,Customer 930,customer930@example.com,2024-05-29,2024-08-07,0,1,Regular
+CUST00931,7,7,11499.29,Customer 931,customer931@example.com,2023-04-28,2024-02-02,3,0,High Value
+CUST00932,297,3,3727.14,Customer 932,customer932@example.com,2024-12-18,2024-12-26,0,1,Regular
+CUST00933,22,4,4924.25,Customer 933,customer933@example.com,2024-11-02,2024-11-13,2,0,Regular
+CUST00934,61,5,7620.54,Customer 934,customer934@example.com,2024-12-19,2024-12-28,1,0,Regular
+CUST00935,172,6,8586.98,Customer 935,customer935@example.com,2024-05-01,2024-06-02,1,1,Regular
+CUST00936,201,5,5887.97,Customer 936,customer936@example.com,2024-02-15,2024-03-30,1,1,Regular
+CUST00937,38,4,2948.95,Customer 937,customer937@example.com,2024-01-16,2024-06-22,2,0,Regular
+CUST00938,48,2,2324.38,Customer 938,customer938@example.com,2024-09-18,2024-09-27,2,0,Regular
+CUST00939,86,7,5993.869999999999,Customer 939,customer939@example.com,2024-02-12,2024-06-06,1,0,Regular
+CUST00940,22,5,7912.960000000001,Customer 940,customer940@example.com,2023-06-29,2024-11-20,1,0,Medium Value
+CUST00941,175,6,7333.47,Customer 941,customer941@example.com,2024-10-16,2024-11-06,1,1,Regular
+CUST00942,108,6,7722.15,Customer 942,customer942@example.com,2023-05-03,2024-05-03,1,1,Regular
+CUST00943,18,6,5088.17,Customer 943,customer943@example.com,2023-03-11,2024-08-15,1,0,Medium Value
+CUST00944,9,5,10616.52,Customer 944,customer944@example.com,2023-07-01,2023-10-24,1,0,Medium Value
+CUST00945,395,3,2557.8900000000003,Customer 945,customer945@example.com,2024-04-25,2024-08-09,0,1,Regular
+CUST00946,28,6,7456.58,Customer 946,customer946@example.com,2023-10-08,2024-12-26,1,0,High Value
+CUST00947,46,5,7237.58,Customer 947,customer947@example.com,2024-05-23,2024-07-24,1,0,Medium Value
+CUST00948,192,5,2334.21,Customer 948,customer948@example.com,2023-11-17,2024-04-12,2,1,Regular
+CUST00949,95,5,5363.42,Customer 949,customer949@example.com,2024-04-11,2024-08-08,1,1,Regular
+CUST00950,33,5,4586.22,Customer 950,customer950@example.com,2024-01-24,2024-01-28,1,0,Regular
+CUST00951,12,6,7861.33,Customer 951,customer951@example.com,2023-09-26,2024-11-01,1,0,High Value
+CUST00952,105,7,7299.63,Customer 952,customer952@example.com,2023-02-10,2023-02-15,1,1,Regular
+CUST00953,520,1,608.58,Customer 953,customer953@example.com,2023-06-18,2023-11-16,0,1,Low Value
+CUST00954,256,4,3575.69,Customer 954,customer954@example.com,2023-02-04,2024-04-23,0,1,Regular
+CUST00955,211,3,2950.52,Customer 955,customer955@example.com,2024-05-07,2024-11-26,2,1,Regular
+CUST00956,623,2,2658.52,Customer 956,customer956@example.com,2023-03-25,2023-06-02,0,1,Regular
+CUST00957,73,8,4813.52,Customer 957,customer957@example.com,2023-11-02,2024-01-03,1,0,Regular
+CUST00958,245,5,4976.81,Customer 958,customer958@example.com,2024-09-16,2024-11-09,1,1,Regular
+CUST00959,42,3,2542.35,Customer 959,customer959@example.com,2024-07-13,2024-12-10,2,0,Regular
+CUST00960,78,7,5719.13,Customer 960,customer960@example.com,2024-12-18,2024-12-28,1,0,Regular
+CUST00961,104,5,5066.12,Customer 961,customer961@example.com,2024-08-12,2024-11-14,1,1,Regular
+CUST00962,63,6,4733.3,Customer 962,customer962@example.com,2024-06-21,2024-08-19,1,0,Regular
+CUST00963,14,6,8120.38,Customer 963,customer963@example.com,2024-02-18,2024-05-05,1,0,High Value
+CUST00964,307,3,4397.45,Customer 964,customer964@example.com,2023-03-23,2023-11-27,0,1,Regular
+CUST00965,83,4,3992.89,Customer 965,customer965@example.com,2023-09-16,2024-02-26,2,0,Regular
+CUST00966,439,6,7979.83,Customer 966,customer966@example.com,2023-05-26,2023-07-06,0,1,Regular
+CUST00967,17,5,5865.56,Customer 967,customer967@example.com,2024-06-15,2024-10-04,1,0,Medium Value
+CUST00968,95,6,2774.85,Customer 968,customer968@example.com,2023-07-31,2023-11-30,2,1,Regular
+CUST00969,120,4,4517.36,Customer 969,customer969@example.com,2023-08-26,2024-07-16,2,1,Regular
+CUST00970,343,4,8674.75,Customer 970,customer970@example.com,2023-10-31,2024-08-27,0,1,Regular
+CUST00971,47,6,7111.24,Customer 971,customer971@example.com,2023-06-08,2024-07-18,1,0,Medium Value
+CUST00972,111,4,6365.17,Customer 972,customer972@example.com,2023-09-26,2024-02-23,1,1,Regular
+CUST00973,75,7,11601.88,Customer 973,customer973@example.com,2023-06-24,2024-07-24,3,0,Regular
+CUST00974,78,6,5570.08,Customer 974,customer974@example.com,2024-06-25,2024-07-13,1,0,Regular
+CUST00975,20,4,5961.900000000001,Customer 975,customer975@example.com,2024-04-04,2024-11-08,1,0,Medium Value
+CUST00976,154,3,1600.52,Customer 976,customer976@example.com,2024-11-12,2024-11-14,2,1,Regular
+CUST00977,69,7,8922.09,Customer 977,customer977@example.com,2023-01-12,2023-05-25,3,0,Regular
+CUST00978,283,1,3153.32,Customer 978,customer978@example.com,2023-12-06,2024-03-28,0,1,Low Value
+CUST00979,234,6,9028.57,Customer 979,customer979@example.com,2023-07-26,2023-11-08,1,1,Regular
+CUST00980,298,2,397.06,Customer 980,customer980@example.com,2024-07-23,2024-12-15,0,1,Regular
+CUST00981,130,6,6481.599999999999,Customer 981,customer981@example.com,2024-10-31,2024-11-29,1,1,Regular
+CUST00982,143,3,1783.55,Customer 982,customer982@example.com,2024-05-13,2024-10-23,2,1,Regular
+CUST00983,22,4,4643.34,Customer 983,customer983@example.com,2023-03-25,2023-08-12,2,0,Regular
+CUST00984,236,4,9163.93,Customer 984,customer984@example.com,2023-02-24,2023-12-07,1,1,Regular
+CUST00985,70,5,6899.32,Customer 985,customer985@example.com,2024-08-22,2024-10-09,1,0,Regular
+CUST00986,168,3,5453.99,Customer 986,customer986@example.com,2023-03-05,2023-05-08,2,1,Regular
+CUST00987,199,4,4634.13,Customer 987,customer987@example.com,2023-10-03,2024-07-18,2,1,Regular
+CUST00988,213,6,5813.78,Customer 988,customer988@example.com,2023-02-14,2024-06-13,1,1,Regular
+CUST00989,5,6,5457.13,Customer 989,customer989@example.com,2023-01-24,2024-12-16,1,0,Medium Value
+CUST00990,23,8,7990.19,Customer 990,customer990@example.com,2024-11-02,2024-11-09,3,0,High Value
+CUST00991,0,6,3948.25,Customer 991,customer991@example.com,2024-03-22,2024-05-14,1,0,Regular
+CUST00992,37,6,3346.61,Customer 992,customer992@example.com,2024-07-28,2024-08-10,1,0,Regular
+CUST00993,21,7,7031.64,Customer 993,customer993@example.com,2024-12-27,2024-12-28,1,0,Medium Value
+CUST00994,30,4,4940.27,Customer 994,customer994@example.com,2024-12-07,2024-12-20,2,0,Regular
+CUST00995,10,4,5009.17,Customer 995,customer995@example.com,2024-02-02,2024-09-21,2,0,Regular
+CUST00996,203,7,5606.4,Customer 996,customer996@example.com,2023-11-15,2024-03-25,1,1,Regular
+CUST00997,76,4,4648.41,Customer 997,customer997@example.com,2023-04-05,2024-06-29,2,0,Regular
+CUST00998,72,9,5496.0,Customer 998,customer998@example.com,2024-08-11,2024-12-30,1,0,Regular
+CUST00999,157,4,3988.39,Customer 999,customer999@example.com,2023-12-07,2024-11-26,2,1,Regular
+CUST01000,340,2,5004.450000000001,Customer 1000,customer1000@example.com,2024-10-30,2024-12-09,0,1,Regular

@@ -1,0 +1,340 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sales and Customer Analysis Report</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <!-- Custom Styles -->
+        <style>
+            :root {
+                --primary-color: #2c3e50;
+                --secondary-color: #3498db;
+                --background-color: #f8f9fa;
+                --card-background: #ffffff;
+                --text-color: #2c3e50;
+            }
+            
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                line-height: 1.6;
+            }
+            
+            .container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+            
+            .header {
+                text-align: center;
+                padding: 4rem 0;
+                background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+                color: white;
+                border-radius: 10px;
+                margin-bottom: 3rem;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            .metrics-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                margin-bottom: 3rem;
+            }
+            
+            .metric-card {
+                background: var(--card-background);
+                padding: 2rem;
+                border-radius: 15px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            
+            .metric-card:hover {
+                transform: translateY(-5px);
+            }
+            
+            .metric-value {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--secondary-color);
+                margin-bottom: 0.5rem;
+            }
+            
+            .section {
+                background: var(--card-background);
+                padding: 2rem;
+                border-radius: 15px;
+                margin-bottom: 3rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .section-header {
+                color: var(--primary-color);
+                margin-bottom: 2rem;
+                border-bottom: 2px solid var(--secondary-color);
+                padding-bottom: 1rem;
+            }
+            
+            .table {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            
+            .table th {
+                background-color: var(--secondary-color);
+                color: white;
+                font-weight: 600;
+            }
+            
+            .table td {
+                vertical-align: middle;
+                padding: 1rem;
+            }
+            
+            .visualization {
+                margin-bottom: 2rem;
+            }
+            
+            .interactive-visualization {
+                width: 100%;
+                height: 500px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            
+            .segment-distribution {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                margin-bottom: 3rem;
+            }
+            
+            .segment-card {
+                background: var(--card-background);
+                padding: 2rem;
+                border-radius: 15px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            
+            .segment-value {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--primary-color);
+                margin-bottom: 0.5rem;
+            }
+            
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .metrics-grid {
+                    grid-template-columns: 1fr;
+                }
+                
+                .segment-distribution {
+                    grid-template-columns: 1fr;
+                }
+                
+                .header h1 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Sales and Customer Analysis Report</h1>
+                <p class="text-white">Generated on: 2025-06-01</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-header">Key Business Metrics</h2>
+                <div class="metrics-grid">
+                    
+                    <div class="metric-card">
+                        <div class="metric-value">$5,450,119.86</div>
+                        <p class="text-muted">Total Sales</p>
+                        <i class="fas fa-arrow-up text-success"></i>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-value">5,000</div>
+                        <p class="text-muted">Total Orders</p>
+                        <i class="fas fa-arrow-up text-success"></i>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-value">$1,090.02</div>
+                        <p class="text-muted">Average Order Value</p>
+                        <i class="fas fa-arrow-up text-success"></i>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-value">995</div>
+                        <p class="text-muted">Total Customers</p>
+                        <i class="fas fa-arrow-up text-success"></i>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-value">56.2%</div>
+                        <p class="text-muted">Churn Rate</p>
+                        <i class="fas fa-arrow-up text-success"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-header">Product Performance Analysis</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Total Revenue</th>
+                                    <th>Total Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td></td>
+                                    <td>$607181.26</td>
+                                    <td>1330</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td></td>
+                                    <td>$513041.43</td>
+                                    <td>1180</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td></td>
+                                    <td>$504909.63</td>
+                                    <td>988</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td></td>
+                                    <td>$453592.42</td>
+                                    <td>799</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td></td>
+                                    <td>$435019.09</td>
+                                    <td>990</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="visualization">
+                            <h3>Product Category Distribution</h3>
+                            <div id="productDist"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-header">Customer Segmentation</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="segment-distribution">
+                            
+                            <div class="segment-card">
+                                <div class="segment-value">763</div>
+                                <p>Regular Customers</p>
+                            </div>
+                            
+                            <div class="segment-card">
+                                <div class="segment-value">138</div>
+                                <p>Medium Value Customers</p>
+                            </div>
+                            
+                            <div class="segment-card">
+                                <div class="segment-value">58</div>
+                                <p>High Value Customers</p>
+                            </div>
+                            
+                            <div class="segment-card">
+                                <div class="segment-value">36</div>
+                                <p>Low Value Customers</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="visualization">
+                            <h3>Segment Distribution</h3>
+                            <div id="segmentDist"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-header">Sales Performance</h2>
+                <div class="visualization">
+                    <h3>Sales Trend Analysis</h3>
+                    <div id="salesTrend"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-header">Additional Visual Analysis</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="visualization">
+                            <h3>Correlation Analysis</h3>
+                            <img src="../extended/correlation_heatmap.png" 
+                                 class="img-fluid" 
+                                 alt="Correlation Heatmap">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="visualization">
+                            <h3>Customer Lifetime Value</h3>
+                            <img src="../extended/customer_ltv.png" 
+                                 class="img-fluid" 
+                                 alt="Customer Lifetime Value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script>
+            // Load interactive charts
+            const charts = {"product_dist": "{\"data\":[{\"domain\":{\"x\":[0.0,1.0],\"y\":[0.0,1.0]},\"hovertemplate\":\"Category=%{label}\\u003cbr\\u003eTotalPrice=%{value}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"labels\":[\"Beauty\",\"Books\",\"Clothing\",\"Electronics\",\"Home \u0026 Kitchen\",\"Sports\",\"Toys\"],\"legendgroup\":\"\",\"name\":\"\",\"showlegend\":true,\"values\":{\"dtype\":\"f8\",\"bdata\":\"7FG4HkBfEkG4HoXrvVMwQXE9ClcyFDRBUrgexUYdNUFxPQrXRvkaQWZmZmYoYA1BSOF6FFREJUE=\"},\"type\":\"pie\"}],\"layout\":{\"template\":{\"data\":{\"barpolar\":[{\"marker\":{\"line\":{\"color\":\"rgb(17,17,17)\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"barpolar\"}],\"bar\":[{\"error_x\":{\"color\":\"#f2f5fa\"},\"error_y\":{\"color\":\"#f2f5fa\"},\"marker\":{\"line\":{\"color\":\"rgb(17,17,17)\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"bar\"}],\"carpet\":[{\"aaxis\":{\"endlinecolor\":\"#A2B1C6\",\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"minorgridcolor\":\"#506784\",\"startlinecolor\":\"#A2B1C6\"},\"baxis\":{\"endlinecolor\":\"#A2B1C6\",\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"minorgridcolor\":\"#506784\",\"startlinecolor\":\"#A2B1C6\"},\"type\":\"carpet\"}],\"choropleth\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"choropleth\"}],\"contourcarpet\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"contourcarpet\"}],\"contour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"contour\"}],\"heatmap\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"heatmap\"}],\"histogram2dcontour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2dcontour\"}],\"histogram2d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2d\"}],\"histogram\":[{\"marker\":{\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"histogram\"}],\"mesh3d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"mesh3d\"}],\"parcoords\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"parcoords\"}],\"pie\":[{\"automargin\":true,\"type\":\"pie\"}],\"scatter3d\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatter3d\"}],\"scattercarpet\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattercarpet\"}],\"scattergeo\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattergeo\"}],\"scattergl\":[{\"marker\":{\"line\":{\"color\":\"#283442\"}},\"type\":\"scattergl\"}],\"scattermapbox\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermapbox\"}],\"scattermap\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermap\"}],\"scatterpolargl\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolargl\"}],\"scatterpolar\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolar\"}],\"scatter\":[{\"marker\":{\"line\":{\"color\":\"#283442\"}},\"type\":\"scatter\"}],\"scatterternary\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterternary\"}],\"surface\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"surface\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#506784\"},\"line\":{\"color\":\"rgb(17,17,17)\"}},\"header\":{\"fill\":{\"color\":\"#2a3f5f\"},\"line\":{\"color\":\"rgb(17,17,17)\"}},\"type\":\"table\"}]},\"layout\":{\"annotationdefaults\":{\"arrowcolor\":\"#f2f5fa\",\"arrowhead\":0,\"arrowwidth\":1},\"autotypenumbers\":\"strict\",\"coloraxis\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"colorscale\":{\"diverging\":[[0,\"#8e0152\"],[0.1,\"#c51b7d\"],[0.2,\"#de77ae\"],[0.3,\"#f1b6da\"],[0.4,\"#fde0ef\"],[0.5,\"#f7f7f7\"],[0.6,\"#e6f5d0\"],[0.7,\"#b8e186\"],[0.8,\"#7fbc41\"],[0.9,\"#4d9221\"],[1,\"#276419\"]],\"sequential\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"sequentialminus\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]},\"colorway\":[\"#636efa\",\"#EF553B\",\"#00cc96\",\"#ab63fa\",\"#FFA15A\",\"#19d3f3\",\"#FF6692\",\"#B6E880\",\"#FF97FF\",\"#FECB52\"],\"font\":{\"color\":\"#f2f5fa\"},\"geo\":{\"bgcolor\":\"rgb(17,17,17)\",\"lakecolor\":\"rgb(17,17,17)\",\"landcolor\":\"rgb(17,17,17)\",\"showlakes\":true,\"showland\":true,\"subunitcolor\":\"#506784\"},\"hoverlabel\":{\"align\":\"left\"},\"hovermode\":\"closest\",\"mapbox\":{\"style\":\"dark\"},\"paper_bgcolor\":\"rgb(17,17,17)\",\"plot_bgcolor\":\"rgb(17,17,17)\",\"polar\":{\"angularaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"bgcolor\":\"rgb(17,17,17)\",\"radialaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"}},\"scene\":{\"xaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"},\"yaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"},\"zaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"}},\"shapedefaults\":{\"line\":{\"color\":\"#f2f5fa\"}},\"sliderdefaults\":{\"bgcolor\":\"#C8D4E3\",\"bordercolor\":\"rgb(17,17,17)\",\"borderwidth\":1,\"tickwidth\":0},\"ternary\":{\"aaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"baxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"bgcolor\":\"rgb(17,17,17)\",\"caxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"}},\"title\":{\"x\":0.05},\"updatemenudefaults\":{\"bgcolor\":\"#506784\",\"borderwidth\":0},\"xaxis\":{\"automargin\":true,\"gridcolor\":\"#283442\",\"linecolor\":\"#506784\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#283442\",\"zerolinewidth\":2},\"yaxis\":{\"automargin\":true,\"gridcolor\":\"#283442\",\"linecolor\":\"#506784\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#283442\",\"zerolinewidth\":2}}},\"legend\":{\"tracegroupgap\":0},\"title\":{\"text\":\"Product Category Distribution\"}}}", "sales_trend": "{\"data\":[{\"hovertemplate\":\"Date=%{x}\\u003cbr\\u003eSales Amount=%{y}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"legendgroup\":\"\",\"line\":{\"color\":\"#636efa\",\"dash\":\"solid\",\"width\":2},\"marker\":{\"symbol\":\"circle\"},\"mode\":\"lines\",\"name\":\"\",\"orientation\":\"v\",\"showlegend\":false,\"x\":[\"2023-01-01\",\"2023-01-02\",\"2023-01-03\",\"2023-01-04\",\"2023-01-05\",\"2023-01-06\",\"2023-01-07\",\"2023-01-08\",\"2023-01-09\",\"2023-01-10\",\"2023-01-11\",\"2023-01-12\",\"2023-01-13\",\"2023-01-14\",\"2023-01-15\",\"2023-01-16\",\"2023-01-17\",\"2023-01-18\",\"2023-01-19\",\"2023-01-20\",\"2023-01-21\",\"2023-01-22\",\"2023-01-23\",\"2023-01-24\",\"2023-01-25\",\"2023-01-26\",\"2023-01-27\",\"2023-01-28\",\"2023-01-29\",\"2023-01-30\",\"2023-01-31\",\"2023-02-01\",\"2023-02-02\",\"2023-02-03\",\"2023-02-04\",\"2023-02-05\",\"2023-02-06\",\"2023-02-07\",\"2023-02-08\",\"2023-02-09\",\"2023-02-10\",\"2023-02-11\",\"2023-02-12\",\"2023-02-13\",\"2023-02-14\",\"2023-02-15\",\"2023-02-16\",\"2023-02-17\",\"2023-02-18\",\"2023-02-19\",\"2023-02-20\",\"2023-02-21\",\"2023-02-22\",\"2023-02-23\",\"2023-02-24\",\"2023-02-25\",\"2023-02-26\",\"2023-02-27\",\"2023-02-28\",\"2023-03-01\",\"2023-03-02\",\"2023-03-03\",\"2023-03-04\",\"2023-03-05\",\"2023-03-06\",\"2023-03-07\",\"2023-03-08\",\"2023-03-09\",\"2023-03-10\",\"2023-03-11\",\"2023-03-12\",\"2023-03-13\",\"2023-03-14\",\"2023-03-15\",\"2023-03-16\",\"2023-03-17\",\"2023-03-18\",\"2023-03-19\",\"2023-03-20\",\"2023-03-21\",\"2023-03-22\",\"2023-03-23\",\"2023-03-24\",\"2023-03-25\",\"2023-03-26\",\"2023-03-27\",\"2023-03-28\",\"2023-03-29\",\"2023-03-30\",\"2023-03-31\",\"2023-04-01\",\"2023-04-02\",\"2023-04-03\",\"2023-04-04\",\"2023-04-05\",\"2023-04-06\",\"2023-04-07\",\"2023-04-08\",\"2023-04-09\",\"2023-04-10\",\"2023-04-11\",\"2023-04-12\",\"2023-04-13\",\"2023-04-14\",\"2023-04-15\",\"2023-04-16\",\"2023-04-17\",\"2023-04-18\",\"2023-04-19\",\"2023-04-20\",\"2023-04-21\",\"2023-04-22\",\"2023-04-23\",\"2023-04-24\",\"2023-04-25\",\"2023-04-26\",\"2023-04-27\",\"2023-04-28\",\"2023-04-29\",\"2023-04-30\",\"2023-05-01\",\"2023-05-02\",\"2023-05-03\",\"2023-05-04\",\"2023-05-05\",\"2023-05-06\",\"2023-05-07\",\"2023-05-08\",\"2023-05-09\",\"2023-05-10\",\"2023-05-11\",\"2023-05-12\",\"2023-05-13\",\"2023-05-14\",\"2023-05-15\",\"2023-05-16\",\"2023-05-17\",\"2023-05-18\",\"2023-05-19\",\"2023-05-20\",\"2023-05-21\",\"2023-05-22\",\"2023-05-23\",\"2023-05-24\",\"2023-05-25\",\"2023-05-26\",\"2023-05-27\",\"2023-05-28\",\"2023-05-29\",\"2023-05-30\",\"2023-05-31\",\"2023-06-01\",\"2023-06-02\",\"2023-06-03\",\"2023-06-04\",\"2023-06-05\",\"2023-06-06\",\"2023-06-07\",\"2023-06-08\",\"2023-06-09\",\"2023-06-10\",\"2023-06-11\",\"2023-06-12\",\"2023-06-13\",\"2023-06-14\",\"2023-06-15\",\"2023-06-16\",\"2023-06-17\",\"2023-06-18\",\"2023-06-19\",\"2023-06-20\",\"2023-06-21\",\"2023-06-22\",\"2023-06-23\",\"2023-06-24\",\"2023-06-25\",\"2023-06-26\",\"2023-06-27\",\"2023-06-28\",\"2023-06-29\",\"2023-06-30\",\"2023-07-01\",\"2023-07-02\",\"2023-07-03\",\"2023-07-04\",\"2023-07-05\",\"2023-07-06\",\"2023-07-07\",\"2023-07-08\",\"2023-07-09\",\"2023-07-10\",\"2023-07-11\",\"2023-07-12\",\"2023-07-13\",\"2023-07-14\",\"2023-07-15\",\"2023-07-16\",\"2023-07-17\",\"2023-07-18\",\"2023-07-19\",\"2023-07-20\",\"2023-07-21\",\"2023-07-22\",\"2023-07-23\",\"2023-07-24\",\"2023-07-25\",\"2023-07-26\",\"2023-07-27\",\"2023-07-28\",\"2023-07-29\",\"2023-07-30\",\"2023-07-31\",\"2023-08-01\",\"2023-08-02\",\"2023-08-03\",\"2023-08-04\",\"2023-08-05\",\"2023-08-06\",\"2023-08-07\",\"2023-08-08\",\"2023-08-09\",\"2023-08-10\",\"2023-08-11\",\"2023-08-12\",\"2023-08-13\",\"2023-08-14\",\"2023-08-15\",\"2023-08-16\",\"2023-08-17\",\"2023-08-18\",\"2023-08-19\",\"2023-08-20\",\"2023-08-21\",\"2023-08-22\",\"2023-08-23\",\"2023-08-24\",\"2023-08-25\",\"2023-08-26\",\"2023-08-27\",\"2023-08-28\",\"2023-08-29\",\"2023-08-30\",\"2023-08-31\",\"2023-09-01\",\"2023-09-02\",\"2023-09-03\",\"2023-09-04\",\"2023-09-05\",\"2023-09-06\",\"2023-09-07\",\"2023-09-08\",\"2023-09-09\",\"2023-09-10\",\"2023-09-11\",\"2023-09-12\",\"2023-09-13\",\"2023-09-14\",\"2023-09-15\",\"2023-09-16\",\"2023-09-17\",\"2023-09-18\",\"2023-09-19\",\"2023-09-20\",\"2023-09-21\",\"2023-09-22\",\"2023-09-23\",\"2023-09-24\",\"2023-09-25\",\"2023-09-26\",\"2023-09-27\",\"2023-09-28\",\"2023-09-29\",\"2023-09-30\",\"2023-10-01\",\"2023-10-02\",\"2023-10-03\",\"2023-10-04\",\"2023-10-05\",\"2023-10-06\",\"2023-10-07\",\"2023-10-08\",\"2023-10-09\",\"2023-10-10\",\"2023-10-11\",\"2023-10-12\",\"2023-10-13\",\"2023-10-14\",\"2023-10-15\",\"2023-10-16\",\"2023-10-17\",\"2023-10-18\",\"2023-10-19\",\"2023-10-20\",\"2023-10-21\",\"2023-10-22\",\"2023-10-23\",\"2023-10-24\",\"2023-10-25\",\"2023-10-26\",\"2023-10-27\",\"2023-10-28\",\"2023-10-29\",\"2023-10-30\",\"2023-10-31\",\"2023-11-01\",\"2023-11-02\",\"2023-11-03\",\"2023-11-04\",\"2023-11-05\",\"2023-11-06\",\"2023-11-07\",\"2023-11-08\",\"2023-11-09\",\"2023-11-10\",\"2023-11-11\",\"2023-11-12\",\"2023-11-13\",\"2023-11-14\",\"2023-11-15\",\"2023-11-16\",\"2023-11-17\",\"2023-11-18\",\"2023-11-19\",\"2023-11-20\",\"2023-11-21\",\"2023-11-22\",\"2023-11-23\",\"2023-11-24\",\"2023-11-25\",\"2023-11-26\",\"2023-11-27\",\"2023-11-28\",\"2023-11-29\",\"2023-11-30\",\"2023-12-01\",\"2023-12-02\",\"2023-12-03\",\"2023-12-04\",\"2023-12-05\",\"2023-12-06\",\"2023-12-07\",\"2023-12-08\",\"2023-12-09\",\"2023-12-10\",\"2023-12-11\",\"2023-12-12\",\"2023-12-13\",\"2023-12-14\",\"2023-12-15\",\"2023-12-16\",\"2023-12-17\",\"2023-12-18\",\"2023-12-19\",\"2023-12-20\",\"2023-12-21\",\"2023-12-22\",\"2023-12-23\",\"2023-12-24\",\"2023-12-25\",\"2023-12-26\",\"2023-12-27\",\"2023-12-28\",\"2023-12-29\",\"2023-12-30\",\"2023-12-31\",\"2024-01-01\",\"2024-01-02\",\"2024-01-03\",\"2024-01-04\",\"2024-01-05\",\"2024-01-06\",\"2024-01-07\",\"2024-01-08\",\"2024-01-09\",\"2024-01-10\",\"2024-01-11\",\"2024-01-12\",\"2024-01-13\",\"2024-01-14\",\"2024-01-15\",\"2024-01-16\",\"2024-01-17\",\"2024-01-18\",\"2024-01-19\",\"2024-01-20\",\"2024-01-21\",\"2024-01-22\",\"2024-01-23\",\"2024-01-24\",\"2024-01-25\",\"2024-01-26\",\"2024-01-27\",\"2024-01-28\",\"2024-01-29\",\"2024-01-30\",\"2024-01-31\",\"2024-02-01\",\"2024-02-02\",\"2024-02-03\",\"2024-02-04\",\"2024-02-05\",\"2024-02-06\",\"2024-02-07\",\"2024-02-08\",\"2024-02-09\",\"2024-02-10\",\"2024-02-11\",\"2024-02-12\",\"2024-02-13\",\"2024-02-14\",\"2024-02-15\",\"2024-02-16\",\"2024-02-17\",\"2024-02-18\",\"2024-02-19\",\"2024-02-20\",\"2024-02-21\",\"2024-02-22\",\"2024-02-23\",\"2024-02-24\",\"2024-02-25\",\"2024-02-26\",\"2024-02-27\",\"2024-02-28\",\"2024-02-29\",\"2024-03-01\",\"2024-03-02\",\"2024-03-03\",\"2024-03-04\",\"2024-03-05\",\"2024-03-06\",\"2024-03-07\",\"2024-03-08\",\"2024-03-09\",\"2024-03-10\",\"2024-03-11\",\"2024-03-12\",\"2024-03-13\",\"2024-03-14\",\"2024-03-15\",\"2024-03-16\",\"2024-03-17\",\"2024-03-18\",\"2024-03-19\",\"2024-03-20\",\"2024-03-21\",\"2024-03-22\",\"2024-03-23\",\"2024-03-24\",\"2024-03-25\",\"2024-03-26\",\"2024-03-27\",\"2024-03-28\",\"2024-03-29\",\"2024-03-30\",\"2024-03-31\",\"2024-04-01\",\"2024-04-02\",\"2024-04-03\",\"2024-04-04\",\"2024-04-05\",\"2024-04-06\",\"2024-04-07\",\"2024-04-08\",\"2024-04-09\",\"2024-04-10\",\"2024-04-11\",\"2024-04-12\",\"2024-04-13\",\"2024-04-14\",\"2024-04-15\",\"2024-04-16\",\"2024-04-17\",\"2024-04-18\",\"2024-04-19\",\"2024-04-20\",\"2024-04-21\",\"2024-04-22\",\"2024-04-23\",\"2024-04-24\",\"2024-04-25\",\"2024-04-26\",\"2024-04-27\",\"2024-04-28\",\"2024-04-29\",\"2024-04-30\",\"2024-05-01\",\"2024-05-02\",\"2024-05-03\",\"2024-05-04\",\"2024-05-05\",\"2024-05-06\",\"2024-05-07\",\"2024-05-08\",\"2024-05-09\",\"2024-05-10\",\"2024-05-11\",\"2024-05-12\",\"2024-05-13\",\"2024-05-14\",\"2024-05-15\",\"2024-05-16\",\"2024-05-17\",\"2024-05-18\",\"2024-05-19\",\"2024-05-20\",\"2024-05-21\",\"2024-05-22\",\"2024-05-23\",\"2024-05-24\",\"2024-05-25\",\"2024-05-26\",\"2024-05-27\",\"2024-05-28\",\"2024-05-29\",\"2024-05-30\",\"2024-05-31\",\"2024-06-01\",\"2024-06-02\",\"2024-06-03\",\"2024-06-04\",\"2024-06-05\",\"2024-06-06\",\"2024-06-07\",\"2024-06-08\",\"2024-06-09\",\"2024-06-10\",\"2024-06-11\",\"2024-06-12\",\"2024-06-13\",\"2024-06-14\",\"2024-06-15\",\"2024-06-16\",\"2024-06-17\",\"2024-06-18\",\"2024-06-19\",\"2024-06-20\",\"2024-06-21\",\"2024-06-22\",\"2024-06-23\",\"2024-06-24\",\"2024-06-25\",\"2024-06-26\",\"2024-06-27\",\"2024-06-28\",\"2024-06-29\",\"2024-06-30\",\"2024-07-01\",\"2024-07-02\",\"2024-07-03\",\"2024-07-04\",\"2024-07-05\",\"2024-07-06\",\"2024-07-07\",\"2024-07-08\",\"2024-07-09\",\"2024-07-10\",\"2024-07-11\",\"2024-07-12\",\"2024-07-13\",\"2024-07-14\",\"2024-07-15\",\"2024-07-16\",\"2024-07-17\",\"2024-07-18\",\"2024-07-19\",\"2024-07-20\",\"2024-07-21\",\"2024-07-22\",\"2024-07-23\",\"2024-07-24\",\"2024-07-25\",\"2024-07-26\",\"2024-07-27\",\"2024-07-28\",\"2024-07-29\",\"2024-07-30\",\"2024-07-31\",\"2024-08-01\",\"2024-08-02\",\"2024-08-03\",\"2024-08-04\",\"2024-08-05\",\"2024-08-06\",\"2024-08-07\",\"2024-08-08\",\"2024-08-09\",\"2024-08-10\",\"2024-08-11\",\"2024-08-12\",\"2024-08-13\",\"2024-08-14\",\"2024-08-15\",\"2024-08-16\",\"2024-08-17\",\"2024-08-18\",\"2024-08-19\",\"2024-08-20\",\"2024-08-21\",\"2024-08-22\",\"2024-08-23\",\"2024-08-24\",\"2024-08-25\",\"2024-08-26\",\"2024-08-27\",\"2024-08-28\",\"2024-08-29\",\"2024-08-30\",\"2024-08-31\",\"2024-09-01\",\"2024-09-02\",\"2024-09-03\",\"2024-09-04\",\"2024-09-05\",\"2024-09-06\",\"2024-09-07\",\"2024-09-08\",\"2024-09-09\",\"2024-09-10\",\"2024-09-11\",\"2024-09-12\",\"2024-09-13\",\"2024-09-14\",\"2024-09-15\",\"2024-09-16\",\"2024-09-17\",\"2024-09-18\",\"2024-09-19\",\"2024-09-20\",\"2024-09-21\",\"2024-09-22\",\"2024-09-23\",\"2024-09-24\",\"2024-09-25\",\"2024-09-26\",\"2024-09-27\",\"2024-09-28\",\"2024-09-29\",\"2024-09-30\",\"2024-10-01\",\"2024-10-02\",\"2024-10-03\",\"2024-10-04\",\"2024-10-05\",\"2024-10-06\",\"2024-10-07\",\"2024-10-08\",\"2024-10-09\",\"2024-10-10\",\"2024-10-11\",\"2024-10-12\",\"2024-10-13\",\"2024-10-14\",\"2024-10-15\",\"2024-10-16\",\"2024-10-17\",\"2024-10-18\",\"2024-10-19\",\"2024-10-20\",\"2024-10-21\",\"2024-10-22\",\"2024-10-23\",\"2024-10-24\",\"2024-10-25\",\"2024-10-26\",\"2024-10-27\",\"2024-10-28\",\"2024-10-29\",\"2024-10-30\",\"2024-10-31\",\"2024-11-01\",\"2024-11-02\",\"2024-11-03\",\"2024-11-04\",\"2024-11-05\",\"2024-11-06\",\"2024-11-07\",\"2024-11-08\",\"2024-11-09\",\"2024-11-10\",\"2024-11-11\",\"2024-11-12\",\"2024-11-13\",\"2024-11-14\",\"2024-11-15\",\"2024-11-16\",\"2024-11-17\",\"2024-11-18\",\"2024-11-19\",\"2024-11-20\",\"2024-11-21\",\"2024-11-22\",\"2024-11-23\",\"2024-11-24\",\"2024-11-25\",\"2024-11-26\",\"2024-11-27\",\"2024-11-28\",\"2024-11-29\",\"2024-11-30\",\"2024-12-01\",\"2024-12-02\",\"2024-12-03\",\"2024-12-04\",\"2024-12-05\",\"2024-12-06\",\"2024-12-07\",\"2024-12-08\",\"2024-12-09\",\"2024-12-10\",\"2024-12-11\",\"2024-12-12\",\"2024-12-13\",\"2024-12-14\",\"2024-12-15\",\"2024-12-16\",\"2024-12-17\",\"2024-12-18\",\"2024-12-19\",\"2024-12-20\",\"2024-12-21\",\"2024-12-22\",\"2024-12-23\",\"2024-12-24\",\"2024-12-25\",\"2024-12-26\",\"2024-12-27\",\"2024-12-28\",\"2024-12-29\",\"2024-12-30\"],\"xaxis\":\"x\",\"y\":{\"dtype\":\"f8\",\"bdata\":\"9ihcj0I3tECkcD0Kl6KxQPYoXI\\u002fCQ8FA7FG4HoVduUDiehSuh168QHsUrkdhSqxApHA9Crelx0BnZmZmhrLDQM3MzMwM2rZA16NwPSqwwkAAAAAAgDKwQK5H4XoUpa1AzczMzMx0uECamZmZORnDQFK4HoXrf75AAAAAAEDks0AK16NwPVyVQK5H4XrUiLlAUrgehWs7tkApXI\\u002fCdQzDQK5H4XqUE8FA2KNwPUo4vECkcD0K17+3QGZmZmbmGbNAZmZmZoaCzEB7FK5HQVTEQJqZmZkZwsdAH4XrUbg4lkCF61G4nkOqQGZmZmaGPsZAzszMzMw5mkAAAAAAAJa2QFyPwvUolbBAFa5H4bqStkApXI\\u002fC9SOvQKRwPQq3ftBApHA9CjfvwkD2KFyPgmGxQI\\u002fC9ShcnbdAFK5H4Trut0AzMzMz8yC5QJDC9Shc17NApHA9CjcEw0AAAAAAAB2gQNejcD2KYbJAH4XrUbjTuED2KFyPgoS7QDMzMzNzIcJA2KNwPYqZv0C4HoXr0QS2QGZmZmbGFMFAj8L1KNw4wkBmZmZmZiiwQOF6FK7nT8NAuB6F67Hpx0AfhetR6I7TQDMzMzOTasFAAAAAAADrukAVrkfher\\u002fMQLgehesRwLVAFK5H4Xowu0DMzMzMTBWzQM3MzMzM4qlA9ihcj0LcvEAzMzMzk7rQQKRwPQqX5LlAUrgehettsUC4HoXrMVfEQBWuR+H6iq9AMzMzM7Noq0CuR+F6lHm9QGZmZmbm5bBAFa5H4XoxtUBmZmZmBtzHQGZmZmYm+bZAH4XrUTitxkApXI\\u002fCtRrHQM3MzMzM8qBApHA9ClcDrkCamZmZ2Zq0QJqZmZnZaLFA4noUrsfUtkC5HoXrEcC+QLgehetx9cRAZmZmZiaLskCF61G4nne8QPYoXI8CBrVAAAAAAOCswkCamZmZWdSwQKRwPQoXD7VArkfhenQswUCQwvUo3HynQK5H4XoUJrdA4noUrgfMvUCkcD0KN7HAQFyPwvVouL9ArkfhepQErkA9Ctej8JjEQGZmZmam6clA16NwPQoDtkAzMzMz8z3JQHE9CtfDtspAUrgehcv2w0DC9ShcD7HEQFyPwvXou75AHoXrUXhxu0DXo3A9yhK1QIXrUbg+S8tApHA9CreZxECamZmZWfGyQEjhehRuQrdAkML1KJzNvkB7FK5H4f+zQIXrUbietMVA4XoUrgfftUCF61G43rW+QFK4HoUL38FAmpmZmVkjxkAUrkfhOoqzQK5H4XqUPLJAuB6F69HkvUAfhetRWPLDQM3MzMzMJqhACtejcH3ht0AL16Nw3QfAQNejcD1KXbtAmpmZmZktw0DXo3A9iiu+QDMzMzMTgcNAmpmZmVmqyECuR+F6lNekQHsUrkeBVMBAZmZmZmbyrECPwvUoXOmjQD4K16Pw87pANDMzMzMzukBSuB6F6wGQQDMzMzMTSMZAkML1KFwwuUCuR+F69FvFQFK4HoXrj6ZApHA9Che4ukBI4XoUTmPCQJqZmZlZ7b9AKVyPwvUMw0DrUbgehROxQArXo3A9nbJArkfhepRsp0B7FK5H4fe4QEjhehTuh7JA16NwPYrPtkCPwvUo3ErMQB+F61E4cbhA16NwPQqMs0AUrkfhuhC3QJqZmZkZI7tAFa5H4RrIyUAfhetROMSwQLgehetRZ8RAzczMzMzumkAK16Nw\\u002feDEQM3MzMyMycRAexSuR2EBuEDYo3A9ymO8QD4K16Ow5r5AexSuR2F8ukCkcD0K1063QI\\u002fC9SjcG7xA7FG4HkVQwUAK16NwHaXLQHA9CtfjErpAexSuR4GRw0C4HoXrUfyIQArXo3B95rBAXI\\u002fC9ShAvEBcj8L1KIWhQB+F61F4BrNA9ihcj0JNs0D2KFyPgs25QDMzMzOTPsBA4XoUrseGtEB7FK5HIeqwQB+F61H47rtAmpmZmRksv0CuR+F6lImlQLgehesRk71A16NwPYowqEBmZmZmhojDQDMzMzNz\\u002f75APgrXozDGvUD2KFyPgpq0QLgehevRDaNAFK5H4RqUwEBI4XoUzrHBQFyPwvUokKNAUrgehWtRr0CuR+F6dMvLQBWuR+E65MxAexSuR6G6wUAAAAAAoI7AQHoUrkdhMqRAXI\\u002fC9Si+xkAAAAAAgH3BQArXo3A97sxAUrgehet0qEBI4XoUzgnAQKRwPQpXPL5AexSuR2EVsEAK16Nw\\u002fTfBQPYoXI\\u002fCaMBA4XoUrkckxkAVrkfhujPEQLgehevxBMRAZmZmZuYExUCuR+F6lPq6QFK4HoVrncBACtejcN3DxkCkcD0KV3y5QD0K16Mwgs9AzczMzAw3ukDsUbgehYC5QNejcD0KjbtAAAAAAID+v0AzMzMzs1DFQDMzMzNznbxA4noUrscEv0DC9Shcr8HAQOF6FK6H1spAzczMzOyxw0BSuB6F6wvIQFyPwvUoGL5AhetRuJ5vrkBmZmZm5pKyQHsUrkdhlLNACtejcB0dykAzMzMz8yfIQLgehesR87dAMzMzM\\u002fOyvkAL16NwPY6yQBSuR+F6k6lAKVyPwnXgwEA+CtejcIG0QB6F61HYNsNAcT0K16P\\u002fw0DhehSuB2i\\u002fQClcj8I1KslAMzMzM\\u002fNrt0DsUbgeRQa+QAvXo3DdJ8xANDMzM7PNrkAAAAAAgOakQOxRuB7lu8lAFK5H4XpNtUAUrkfhKoXQQM3MzMxML6lASOF6FG4NwUBcj8L1qBO7QJmZmZkZp8FAMzMzM1PDxUCkcD0Klw+0QOtRuB5l0sBAUrgehes1rUA+CtejcFynQLgehevReq9AKVyPwnUvwUCPwvUoXO2mQAAAAADAjLdAH4XrUThwskD2KFyPIu3DQOxRuB4llMNANDMzM\\u002fO9yEB7FK5H4YWfQClcj8K11rFAhetRuF44xkDC9Shcjym5QK5H4XoU4q5AmpmZmdmWtkBmZmZmZsTIQArXo3B9pbxAPQrXo3DGr0AK16NwbSLSQOF6FK4Hh8dAhetRuJ7tvUBSuB6F69ysQJDC9SjcBb5AmpmZmRnavEDC9Shc707FQFyPwvWoB8JAZmZmZgYbxUAL16NwvXW7QOxRuB6lecVAj8L1KFyXxkDsUbgehSrAQD4K16Nw+aZA4XoUrudpw0Bcj8L1qCCrQM3MzMwM97ZAZmZmZib0tUBI4XoUTijDQFK4HoXrUq9ApHA9CldyrUDC9Shcj++zQML1KFzvy8tAXI\\u002fC9WiJvkDD9ShcD9mzQNijcD0Kkr9AAAAAAICwuUCF61G4PjvLQPUoXI\\u002fi8chAuB6F6zGK0EBmZmZm5iCqQDMzMzNzDb9AzczMzIymykApXI\\u002fCNW60QHE9CtcD4sVA9Shcj8Lvi0C4HoXrEcKzQDMzMzMzqbNAmpmZmZkHvUCF61G4vinBQHE9Ctcj6M5AH4XrUXizsUC4HoXrUZyzQPYoXI\\u002fClsBAUrgehYuMwEA+Ctej0LrEQJDC9SgcKbtAhetRuB6WwkCG61G4\\u002fuDHQJqZmZmZgrxAZ2ZmZua9r0BnZmZmZii9QLgehetxvsJA9ihcj0LGokB7FK5HQeDCQK5H4Xo0psFAXY\\u002fC9SiUqUBI4XoUriDAQIXrUbhed7ZAKVyPwvW4aUApXI\\u002fCtd+2QFyPwvWIJ8FA4XoUrseqoECPwvUo\\u002fKvBQArXo3B988xACtejcD0zt0BSuB6FazSzQNejcD1KObNArkfhenSrxUBmZmZm5vPEQEfhehTuKb9ApHA9CjeewkC4HoXrkYe4QIXrUbie271AZ2ZmZmY2ukDXo3A9CtayQK5H4Xp0I8FApHA9ClcLr0AAAAAAIOTCQFK4HoULwM1AKVyPwjVdtEBxPQrXY5G1QNejcD2KJrdAAAAAAAB2qECF61G43r2zQKNwPQqXALlAFa5H4fq\\u002fwkC4HoXrUcaoQFyPwvUI+cdAj8L1KBzcuEDC9ShcDzKoQEjhehSuHrhAwvUoXA+ktUApXI\\u002fCdayzQOxRuB7FFbxA4noUruezwUDhehSuR67AQKRwPQp3JMBACtejcL2+r0CamZmZmXK7QLgeheuRALNAKVyPwjV4xkD2KFyPgm27QML1KFzvyMFASOF6FG4utkDC9ShcT3G2QMP1KFwPgbNA16NwPQp1wUBmZmZmZo6gQLgehetRpsFAAAAAACDkwECF61G4HjqwQOJ6FK5nesFAPQrXo\\u002fBtvEBmZmZmJt23QML1KFyPHMRACtejcP0wxEBSuB6Fa9+zQI\\u002fC9SjcCcNA16NwPQqVq0BnZmZm5u61QArXo3A9SpJAXI\\u002fC9agGr0B7FK5H4Ye7QJDC9Sjc5bRAAAAAAAChv0AK16NwfZ20QJqZmZmZV5dASOF6FK5vqEDsUbgehemwQM3MzMwMKsBAKVyPwvX5p0AK16NwPVOtQGZmZmZm+7FA16NwPUo\\u002fwEC4HoXr8WTCQFyPwvWI2sBA9ihcjwJe0EBSuB6Fy8vBQGZmZmZm1LJAzczMzCwzxUBmZmZmBsrAQNejcD0K9LpAj8L1KNwmuEDC9ShcT+rGQEjhehTuZL1ArkfhetR4zUD2KFyPAve\\u002fQPYoXI\\u002fCiK5ApHA9CncaxUA+CtejcEivQOF6FK7HZ8BAcT0K1+NQxEAzMzMzM5e4QJqZmZmZeXJAwvUoXO95wEAUrkfh+rTFQI\\u002fC9Sicmb5Aw\\u002fUoXE+itEDC9Shcjz+mQD0K16MwvbRAFK5H4fp5u0ApXI\\u002fCNSbAQKRwPQpXdqtApHA9CleLr0DXo3A9CkChQFyPwvVo2cVAcD0K1yOxv0DhehSuR0m6QK5H4XqUSblApHA9CtektUDsUbgeRb3DQJqZmZl5TcBAMzMzM7MUw0ApXI\\u002fCtea0QM3MzMyMQbNArkfhelQWvEAzMzMzs5e5QChcj8J1Ir1A16NwPeoFy0AzMzMzUyDDQD0K16Owu8pAcD0K16MDt0CuR+F6lDO8QHA9Ctfj47dAmpmZmdkEv0CQwvUoXM2cQHsUrkdhUbhAwvUoXI\\u002fIq0ApXI\\u002fC9ZW\\u002fQOxRuB4FELJApHA9ChfFtkBxPQrXI7jBQEfhehQusbhAPQrXo3DZpUBSuB6F68TIQK5H4XoUKqNAPQrXo9BQxEAzMzMzM8K6QFK4HoXruaRAexSuR8FBzUC4HoXrkfywQD4K16Nwm8BArkfhehTuxEC4HoXrkRC3QOxRuB4FWrhAFK5H4Xq7zkBSuB6Fa0a1QJqZmZn5qMZAXI\\u002fC9QhEwUAzMzMzs4KuQClcj8IV2sNAXI\\u002fC9ShKrkBSuB6FKyu9QDMzMzMTYspAuB6F61G6tEBSuB6FK0O1QClcj8IVAsJAKVyPwrUksEDC9ShcbwHPQOxRuB7FdbhAFa5H4ZpKzEDhehSuBza9QEjhehQOL8tAZmZmZmbHk0AAAAAAQNCwQKRwPQqXG7xA7FG4HsW3tkA9CtejcNeYQFyPwvWo0bJAzczMzMxwp0C4HoXrEZi9QKRwPQoX57dANDMzMzOMnkCkcD0K18CsQHsUrkehWL5AexSuR0H0zkBI4XoUTmrCQK5H4XpU6MNA7FG4HkU+vkCamZmZmTjCQK5H4XpUGrxAexSuR+HJr0DhehSuB1e\\u002fQHsUrkcBXctASOF6FC4HwUCZmZmZWUe8QI\\u002fC9Sjcj7pAAAAAAICmxEBSuB6F6zSuQLgehevx0sRA9ihcj0LVsUApXI\\u002fCtXa9QArXo3DdisFAehSuR+FboUAAAAAAQGTDQK5H4XpUqLRA2KNwPcrjvkB7FK5H4TGqQOF6FK4HsLZAUrgehavFzkA+CtejMGLNQPYoXI\\u002fCJLdAuB6F69EKtUAAAAAAAOmsQArXo3D9ArJAKlyPwrWRu0DD9ShcD\\u002fSsQML1KFzP0bZAAAAAAAAXv0AfhetR+K7FQJDC9Sjc571AZmZmZiYXykBxPQrXI\\u002f7CQK5H4XoUXbpANDMzMzMbqUCuR+F6tNfBQPYoXI8iZsRAAAAAAIAfvEBI4XoULpmrQFyPwvWokalAmpmZmdkfwkCkcD0KVx\\u002fCQMzMzMwMDbpAhetRuN63xkBSuB6Fq0+5QPYoXI8C\\u002fcBApHA9ChdwtkBcj8L16MO+QOF6FK6HkMFAZ2ZmZqarwUDXo3A9iiC5QFK4HoVrGr5AwvUoXE8+tUBmZmZm5kC1QK5H4XoU771AzczMzIwzwEA+CtejMBLIQML1KFxvrcVAFK5H4Xq8xUDXo3A9qjnDQNejcD2KiKVAXI\\u002fC9WintkA+Ctej0NPGQML1KFyPPrxAwvUoXM82uUD2KFyPAvjNQBSuR+F6MqtArkfherT8wkCQwvUo3Mm+QOxRuB4FUsZAzczMzAxPvkDC9ShcT9e+QI\\u002fC9Sj8BstA4noUrgf0tEBSuB6FK2iyQAAAAADAMbtACtejcF0gykD2KFyPAl27QJqZmZlZwbRAzMzMzIyVwUA+CtejUD7DQM3MzMyMB7ZAKVyPwjVXtEAAAAAAgImkQIXrUbgeo7xAUrgehWsSvECkcD0KV3SqQML1KFxvGcBAhutRuF6xvkCuR+F69G7GQClcj8IVasJAhetRuN7Gt0BxPQrXY9bAQJqZmZmZi8hAcD0K16MTp0A9Ctej0EPNQMP1KFxPfLxA9ihcj2KvwUBI4XoUzj\\u002fBQML1KFzvnsFAmpmZmQm40kApXI\\u002fCtUO2QHoUrkehj7dArkfhevTKwUAK16NwvePCQM3MzMxMV69AuB6F6zFIwkAAAAAAwNG6QJDC9Shcwq9A9ihcj0L5vEAzMzMzMxuKQJqZmZkZ7q5ApHA9Cpewv0DD9Shcb2DMQOF6FK7nl8FA9ihcj2LDz0D2KFyPgiG9QB6F61G4Mq9AZ2ZmZiacyUAK16Nw\\u002ff64QNejcD1K87VAXI\\u002fC9ahAtkDNzMzMrCvBQJqZmZmZNKdAexSuR2FDvUDYo3A9ism7QI\\u002fC9ShcZ4VAzczMzMxop0DXo3A9ioi6QJqZmZmZyahAzMzMzIyZu0AK16NwvQq7QEjhehQOyMZAFK5H4Tq0wEDXo3A9iiC5QHE9Ctejw65AKVyPwnXwt0AehetRuESlQClcj8LVDMhAmZmZmZm5u0CF61G43kexQGZmZmbmnb9AZmZmZvYR0kC4HoXrkYnBQML1KFyPpsVA16NwPeoRz0CjcD0KN\\u002ffIQD0K16OwOr1AFa5H4foiu0DD9ShcD3CrQIXrUbi+vcVAFK5H4brfuUAAAAAAADS5QOxRuB6lx8FAH4XrUZjrwkD2KFyPQjK0QAAAAACAwKdA4noUrgdUuEA+CtejcHmbQBWuR+G6l8NAexSuRyGNu0DhehSuR\\u002f25QD4K16NwD75AexSuR+E3sEAK16NwPeu5QGdmZmZmsK1AMzMzM1NVyEB7FK5HYYzBQHsUrkfhyLRACtejcL1ft0DrUbgexXu9QD0K16OwnMBArkfhepSSp0AehetRuHefQK5H4XoUS6RAPgrXo\\u002fDgqUC4HoXr0WeqQB+F61H4TL5AXI\\u002fC9eh8uEAAAAAAQGK2QDMzMzNzU8RA9ihcj0LtwkCuR+F6NErBQOJ6FK5HRa5AXI\\u002fC9Si7uEAAAAAAAPS0QOxRuB5FV8FA16NwPcoFvUDXo3A9Cqi6QK5H4Xo0FMJAFa5H4brLs0CamZmZmTexQOxRuB6F08dArkfhelQFw0A9CtejsE7DQOJ6FK5HwpxAcD0K12MQuECF61G4PpvLQD4K16Owu7JAwvUoXE\\u002fGtkDsUbgehZ+TQJDC9SjcYcFArkfhehTanUApXI\\u002fCFV\\u002fKQClcj8I17rVAUrgehavowkBI4XoUrr27QI\\u002fC9SgcBLVArkfhelRFtEA=\"},\"yaxis\":\"y\",\"type\":\"scatter\"}],\"layout\":{\"template\":{\"data\":{\"barpolar\":[{\"marker\":{\"line\":{\"color\":\"rgb(17,17,17)\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"barpolar\"}],\"bar\":[{\"error_x\":{\"color\":\"#f2f5fa\"},\"error_y\":{\"color\":\"#f2f5fa\"},\"marker\":{\"line\":{\"color\":\"rgb(17,17,17)\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"bar\"}],\"carpet\":[{\"aaxis\":{\"endlinecolor\":\"#A2B1C6\",\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"minorgridcolor\":\"#506784\",\"startlinecolor\":\"#A2B1C6\"},\"baxis\":{\"endlinecolor\":\"#A2B1C6\",\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"minorgridcolor\":\"#506784\",\"startlinecolor\":\"#A2B1C6\"},\"type\":\"carpet\"}],\"choropleth\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"choropleth\"}],\"contourcarpet\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"contourcarpet\"}],\"contour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"contour\"}],\"heatmap\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"heatmap\"}],\"histogram2dcontour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2dcontour\"}],\"histogram2d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2d\"}],\"histogram\":[{\"marker\":{\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"histogram\"}],\"mesh3d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"mesh3d\"}],\"parcoords\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"parcoords\"}],\"pie\":[{\"automargin\":true,\"type\":\"pie\"}],\"scatter3d\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatter3d\"}],\"scattercarpet\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattercarpet\"}],\"scattergeo\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattergeo\"}],\"scattergl\":[{\"marker\":{\"line\":{\"color\":\"#283442\"}},\"type\":\"scattergl\"}],\"scattermapbox\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermapbox\"}],\"scattermap\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermap\"}],\"scatterpolargl\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolargl\"}],\"scatterpolar\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolar\"}],\"scatter\":[{\"marker\":{\"line\":{\"color\":\"#283442\"}},\"type\":\"scatter\"}],\"scatterternary\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterternary\"}],\"surface\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"surface\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#506784\"},\"line\":{\"color\":\"rgb(17,17,17)\"}},\"header\":{\"fill\":{\"color\":\"#2a3f5f\"},\"line\":{\"color\":\"rgb(17,17,17)\"}},\"type\":\"table\"}]},\"layout\":{\"annotationdefaults\":{\"arrowcolor\":\"#f2f5fa\",\"arrowhead\":0,\"arrowwidth\":1},\"autotypenumbers\":\"strict\",\"coloraxis\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"colorscale\":{\"diverging\":[[0,\"#8e0152\"],[0.1,\"#c51b7d\"],[0.2,\"#de77ae\"],[0.3,\"#f1b6da\"],[0.4,\"#fde0ef\"],[0.5,\"#f7f7f7\"],[0.6,\"#e6f5d0\"],[0.7,\"#b8e186\"],[0.8,\"#7fbc41\"],[0.9,\"#4d9221\"],[1,\"#276419\"]],\"sequential\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"sequentialminus\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]},\"colorway\":[\"#636efa\",\"#EF553B\",\"#00cc96\",\"#ab63fa\",\"#FFA15A\",\"#19d3f3\",\"#FF6692\",\"#B6E880\",\"#FF97FF\",\"#FECB52\"],\"font\":{\"color\":\"#f2f5fa\"},\"geo\":{\"bgcolor\":\"rgb(17,17,17)\",\"lakecolor\":\"rgb(17,17,17)\",\"landcolor\":\"rgb(17,17,17)\",\"showlakes\":true,\"showland\":true,\"subunitcolor\":\"#506784\"},\"hoverlabel\":{\"align\":\"left\"},\"hovermode\":\"closest\",\"mapbox\":{\"style\":\"dark\"},\"paper_bgcolor\":\"rgb(17,17,17)\",\"plot_bgcolor\":\"rgb(17,17,17)\",\"polar\":{\"angularaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"bgcolor\":\"rgb(17,17,17)\",\"radialaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"}},\"scene\":{\"xaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"},\"yaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"},\"zaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"}},\"shapedefaults\":{\"line\":{\"color\":\"#f2f5fa\"}},\"sliderdefaults\":{\"bgcolor\":\"#C8D4E3\",\"bordercolor\":\"rgb(17,17,17)\",\"borderwidth\":1,\"tickwidth\":0},\"ternary\":{\"aaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"baxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"bgcolor\":\"rgb(17,17,17)\",\"caxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"}},\"title\":{\"x\":0.05},\"updatemenudefaults\":{\"bgcolor\":\"#506784\",\"borderwidth\":0},\"xaxis\":{\"automargin\":true,\"gridcolor\":\"#283442\",\"linecolor\":\"#506784\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#283442\",\"zerolinewidth\":2},\"yaxis\":{\"automargin\":true,\"gridcolor\":\"#283442\",\"linecolor\":\"#506784\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#283442\",\"zerolinewidth\":2}}},\"xaxis\":{\"anchor\":\"y\",\"domain\":[0.0,1.0],\"title\":{\"text\":\"Date\"}},\"yaxis\":{\"anchor\":\"x\",\"domain\":[0.0,1.0],\"title\":{\"text\":\"Sales Amount\"}},\"legend\":{\"tracegroupgap\":0},\"title\":{\"text\":\"Sales Trend Over Time\"}}}", "segment_dist": "{\"data\":[{\"hovertemplate\":\"MarketingSegment=%{x}\\u003cbr\\u003ecount=%{y}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"legendgroup\":\"\",\"marker\":{\"color\":\"#636efa\",\"pattern\":{\"shape\":\"\"}},\"name\":\"\",\"orientation\":\"v\",\"showlegend\":false,\"textposition\":\"auto\",\"x\":[\"High Value\",\"Low Value\",\"Medium Value\",\"Regular\"],\"xaxis\":\"x\",\"y\":{\"dtype\":\"i2\",\"bdata\":\"OgAkAIoA+wI=\"},\"yaxis\":\"y\",\"type\":\"bar\"}],\"layout\":{\"template\":{\"data\":{\"barpolar\":[{\"marker\":{\"line\":{\"color\":\"rgb(17,17,17)\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"barpolar\"}],\"bar\":[{\"error_x\":{\"color\":\"#f2f5fa\"},\"error_y\":{\"color\":\"#f2f5fa\"},\"marker\":{\"line\":{\"color\":\"rgb(17,17,17)\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"bar\"}],\"carpet\":[{\"aaxis\":{\"endlinecolor\":\"#A2B1C6\",\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"minorgridcolor\":\"#506784\",\"startlinecolor\":\"#A2B1C6\"},\"baxis\":{\"endlinecolor\":\"#A2B1C6\",\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"minorgridcolor\":\"#506784\",\"startlinecolor\":\"#A2B1C6\"},\"type\":\"carpet\"}],\"choropleth\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"choropleth\"}],\"contourcarpet\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"contourcarpet\"}],\"contour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"contour\"}],\"heatmap\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"heatmap\"}],\"histogram2dcontour\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2dcontour\"}],\"histogram2d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"histogram2d\"}],\"histogram\":[{\"marker\":{\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"histogram\"}],\"mesh3d\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"type\":\"mesh3d\"}],\"parcoords\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"parcoords\"}],\"pie\":[{\"automargin\":true,\"type\":\"pie\"}],\"scatter3d\":[{\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatter3d\"}],\"scattercarpet\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattercarpet\"}],\"scattergeo\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattergeo\"}],\"scattergl\":[{\"marker\":{\"line\":{\"color\":\"#283442\"}},\"type\":\"scattergl\"}],\"scattermapbox\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermapbox\"}],\"scattermap\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scattermap\"}],\"scatterpolargl\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolargl\"}],\"scatterpolar\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterpolar\"}],\"scatter\":[{\"marker\":{\"line\":{\"color\":\"#283442\"}},\"type\":\"scatter\"}],\"scatterternary\":[{\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"type\":\"scatterternary\"}],\"surface\":[{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"type\":\"surface\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#506784\"},\"line\":{\"color\":\"rgb(17,17,17)\"}},\"header\":{\"fill\":{\"color\":\"#2a3f5f\"},\"line\":{\"color\":\"rgb(17,17,17)\"}},\"type\":\"table\"}]},\"layout\":{\"annotationdefaults\":{\"arrowcolor\":\"#f2f5fa\",\"arrowhead\":0,\"arrowwidth\":1},\"autotypenumbers\":\"strict\",\"coloraxis\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"colorscale\":{\"diverging\":[[0,\"#8e0152\"],[0.1,\"#c51b7d\"],[0.2,\"#de77ae\"],[0.3,\"#f1b6da\"],[0.4,\"#fde0ef\"],[0.5,\"#f7f7f7\"],[0.6,\"#e6f5d0\"],[0.7,\"#b8e186\"],[0.8,\"#7fbc41\"],[0.9,\"#4d9221\"],[1,\"#276419\"]],\"sequential\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"sequentialminus\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]},\"colorway\":[\"#636efa\",\"#EF553B\",\"#00cc96\",\"#ab63fa\",\"#FFA15A\",\"#19d3f3\",\"#FF6692\",\"#B6E880\",\"#FF97FF\",\"#FECB52\"],\"font\":{\"color\":\"#f2f5fa\"},\"geo\":{\"bgcolor\":\"rgb(17,17,17)\",\"lakecolor\":\"rgb(17,17,17)\",\"landcolor\":\"rgb(17,17,17)\",\"showlakes\":true,\"showland\":true,\"subunitcolor\":\"#506784\"},\"hoverlabel\":{\"align\":\"left\"},\"hovermode\":\"closest\",\"mapbox\":{\"style\":\"dark\"},\"paper_bgcolor\":\"rgb(17,17,17)\",\"plot_bgcolor\":\"rgb(17,17,17)\",\"polar\":{\"angularaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"bgcolor\":\"rgb(17,17,17)\",\"radialaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"}},\"scene\":{\"xaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"},\"yaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"},\"zaxis\":{\"backgroundcolor\":\"rgb(17,17,17)\",\"gridcolor\":\"#506784\",\"gridwidth\":2,\"linecolor\":\"#506784\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"#C8D4E3\"}},\"shapedefaults\":{\"line\":{\"color\":\"#f2f5fa\"}},\"sliderdefaults\":{\"bgcolor\":\"#C8D4E3\",\"bordercolor\":\"rgb(17,17,17)\",\"borderwidth\":1,\"tickwidth\":0},\"ternary\":{\"aaxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"baxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"},\"bgcolor\":\"rgb(17,17,17)\",\"caxis\":{\"gridcolor\":\"#506784\",\"linecolor\":\"#506784\",\"ticks\":\"\"}},\"title\":{\"x\":0.05},\"updatemenudefaults\":{\"bgcolor\":\"#506784\",\"borderwidth\":0},\"xaxis\":{\"automargin\":true,\"gridcolor\":\"#283442\",\"linecolor\":\"#506784\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#283442\",\"zerolinewidth\":2},\"yaxis\":{\"automargin\":true,\"gridcolor\":\"#283442\",\"linecolor\":\"#506784\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"#283442\",\"zerolinewidth\":2}}},\"xaxis\":{\"anchor\":\"y\",\"domain\":[0.0,1.0],\"title\":{\"text\":\"MarketingSegment\"}},\"yaxis\":{\"anchor\":\"x\",\"domain\":[0.0,1.0],\"title\":{\"text\":\"count\"}},\"legend\":{\"tracegroupgap\":0},\"title\":{\"text\":\"Customer Segment Distribution\"},\"barmode\":\"relative\"}}"};
+            
+            // Sales Trend
+            Plotly.newPlot('salesTrend', JSON.parse(charts.sales_trend));
+            
+            // Product Distribution
+            Plotly.newPlot('productDist', JSON.parse(charts.product_dist));
+            
+            // Segment Distribution
+            Plotly.newPlot('segmentDist', JSON.parse(charts.segment_dist));
+        </script>
+    </body>
+    </html>
+    

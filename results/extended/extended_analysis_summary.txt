@@ -1,0 +1,19 @@
+Extended Sales and Customer Analysis Summary
+--------------------------------------------------
+
+Product Performance Analysis:
+- Top 3 Categories by Revenue:
+  1. Electronics: $1,383,750.77
+  2. Clothing: $1,315,890.34
+  3. Books: $1,070,013.92
+
+Customer Segmentation Analysis:
+- Total Customers: 995
+- Average Revenue per Customer: $5,477.51
+- Average Order Quantity: 12.61
+
+Marketing Insights:
+- Regular Customers: 763
+- Medium Value Customers: 138
+- High Value Customers: 58
+- Low Value Customers: 36

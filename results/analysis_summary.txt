@@ -1,0 +1,22 @@
+Sales and Customer Analysis Summary
+--------------------------------------------------
+
+Key Metrics:
+- Total Sales: $5,450,119.86
+- Total Orders: 5000
+- Average Order Value: $1,090.02
+- Total Customers: 995
+- Overall Churn Rate: 56.2%
+
+Customer Segmentation:
+- Segment 1: 354 customers
+- Segment 2: 297 customers
+- Segment 0: 181 customers
+- Segment 3: 163 customers
+
+Top Performing Categories:
+- Electronics: $1,383,750.77
+- Clothing: $1,315,890.34
+- Books: $1,070,013.92
+- Toys: $696,874.04
+- Home & Kitchen: $441,937.71

@@ -1,0 +1,51 @@
+ProductID,Category,ProductName,Cost,Price
+PROD00001,Toys,Cookbook,337.76,617.19
+PROD00002,Clothing,Dumbbells,163.22,645.97
+PROD00003,Books,Blender,421.13,585.89
+PROD00004,Sports,Bicycle,298.65,938.23
+PROD00005,Clothing,Sneakers,395.81,338.85
+PROD00006,Electronics,Coffee Maker,257.32,373.25
+PROD00007,Home & Kitchen,Running Shoes,228.28,613.41
+PROD00008,Electronics,Jacket,262.97,439.39
+PROD00009,Beauty,Running Shoes,188.22,403.61
+PROD00010,Clothing,Jacket,103.09,188.85
+PROD00011,Books,Sneakers,278.81,787.56
+PROD00012,Electronics,Headphones,296.8,549.61
+PROD00013,Electronics,Running Shoes,192.08,562.46
+PROD00014,Electronics,Yoga Mat,61.27,116.04
+PROD00015,Electronics,Dumbbells,422.84,368.96
+PROD00016,Clothing,Biography,496.38,784.35
+PROD00017,Beauty,Laptop,166.84,103.07
+PROD00018,Clothing,Running Shoes,483.15,922.55
+PROD00019,Toys,Biography,230.91,947.01
+PROD00020,Electronics,Blender,138.1,971.6
+PROD00021,Electronics,Yoga Mat,274.95,643.52
+PROD00022,Electronics,Sneakers,131.22,343.51
+PROD00023,Toys,Bicycle,382.22,340.94
+PROD00024,Clothing,Yoga Mat,357.59,485.99
+PROD00025,Clothing,Yoga Mat,6.94,472.9
+PROD00026,Toys,Novel,449.57,684.25
+PROD00027,Home & Kitchen,Smart Watch,354.28,330.57
+PROD00028,Home & Kitchen,Jeans,234.81,699.8
+PROD00029,Books,Air Fryer,463.63,411.65
+PROD00030,Clothing,Yoga Mat,406.06,800.49
+PROD00031,Clothing,Jeans,496.4,452.61
+PROD00032,Beauty,Smart Watch,158.69,589.85
+PROD00033,Books,Cookware Set,243.52,689.82
+PROD00034,Clothing,Bicycle,215.24,751.67
+PROD00035,Toys,Running Shoes,415.92,188.37
+PROD00036,Clothing,Science Fiction,201.51,99.31
+PROD00037,Home & Kitchen,Cookware Set,210.8,374.94
+PROD00038,Clothing,Smartphone,464.33,313.38
+PROD00039,Beauty,Coffee Maker,399.4,370.86
+PROD00040,Books,Air Fryer,336.42,701.54
+PROD00041,Books,T-Shirt,407.14,795.6
+PROD00042,Electronics,Jeans,53.02,554.79
+PROD00043,Electronics,Sneakers,17.69,963.82
+PROD00044,Toys,Science Fiction,485.58,387.7
+PROD00045,Books,Air Fryer,255.9,828.56
+PROD00046,Electronics,Wireless Earbuds,239.84,224.94
+PROD00047,Electronics,Smart Watch,197.31,484.3
+PROD00048,Toys,Jeans,57.69,96.49
+PROD00049,Clothing,Bicycle,464.75,49.35
+PROD00050,Sports,Headphones,324.1,146.02
