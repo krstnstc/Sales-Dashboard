@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1200" height="630" fill="#4361EE"/>
+    
+    <!-- Content Container -->
+    <rect x="100" y="100" width="1000" height="430" rx="20" fill="white"/>
+    
+    <!-- Header -->
+    <rect x="150" y="150" width="300" height="20" rx="5" fill="#F0F2F5"/>
+    <rect x="150" y="190" width="200" height="15" rx="5" fill="#F0F2F5"/>
+    
+    <!-- Chart Area -->
+    <rect x="150" y="250" width="900" height="200" rx="10" fill="#F8F9FA"/>
+    
+    <!-- Chart Elements -->
+    <rect x="180" y="350" width="40" height="80" rx="5" fill="#4361EE"/>
+    <rect x="260" y="300" width="40" height="130" rx="5" fill="#3F37C9"/>
+    <rect x="340" y="250" width="40" height="180" rx="5" fill="#4CC9F0"/>
+    <rect x="420" y="320" width="40" height="110" rx="5" fill="#4895EF"/>
+    <rect x="500" y="280" width="40" height="150" rx="5" fill="#4361EE"/>
+    <rect x="580" y="230" width="40" height="200" rx="5" fill="#3F37C9"/>
+    <rect x="660" y="300" width="40" height="130" rx="5" fill="#4CC9F0"/>
+    
+    <!-- Footer -->
+    <text x="150" y="500" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1A1A1A">Sales Analytics Dashboard</text>
+    <text x="150" y="540" font-family="Arial, sans-serif" font-size="24" fill="#666666">by Kristine L. Sta. Cruz</text>
+    
+    <!-- Logo/Icon -->
+    <circle cx="1050" cy="150" r="40" fill="#4361EE"/>
+    <path d="M1050 120L1060 140H1040L1050 120Z" fill="white"/>
+    <circle cx="1050" cy="150" r="20" stroke="white" stroke-width="4"/>
+</svg>
