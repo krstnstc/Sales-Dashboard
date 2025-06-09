@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Sales Analytics Dashboard providing insights into sales performance, customer behavior, and business metrics.">
+    <meta name="keywords" content="sales dashboard, analytics, business intelligence, data visualization, sales metrics">
+    <meta name="author" content="Sales Analytics Team">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Sales Analytics Dashboard">
+    <meta property="og:description" content="Interactive Sales Analytics Dashboard providing insights into sales performance and business metrics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/sales-dashboard">
+    <meta property="og:image" content="https://example.com/images/sales-dashboard-preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Sales Analytics Dashboard | Business Intelligence & Insights</title>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="dashboard">
+        <!-- Header Section -->
+        <header class="header" role="banner">
+            <div class="header-left">
+                <button id="sidebar-toggle" class="btn btn-icon" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar-nav">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <h1>Sales Analytics Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="header-date" id="current-date" aria-live="polite"></div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <aside id="sidebar" class="sidebar" aria-label="Main navigation">
+                <nav id="sidebar-nav" aria-label="Dashboard sections">
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-nav-item">
+                            <a href="#overview" class="sidebar-nav-link active" data-section="overview" role="tab" aria-selected="true" aria-controls="overview">
+                                <i class="fas fa-chart-line sidebar-nav-icon" aria-hidden="true"></i>
+                                <span>Overview</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="#sales" class="sidebar-nav-link" data-section="sales" role="tab" aria-selected="false" aria-controls="sales">
+                                <i class="fas fa-shopping-cart sidebar-nav-icon" aria-hidden="true"></i>
+                                <span>Sales Analysis</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="#customers" class="sidebar-nav-link" data-section="customers" role="tab" aria-selected="false" aria-controls="customers">
+                                <i class="fas fa-users sidebar-nav-icon" aria-hidden="true"></i>
+                                <span>Customer Insights</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="#forecast" class="sidebar-nav-link" data-section="forecast" role="tab" aria-selected="false" aria-controls="forecast">
+                                <i class="fas fa-chart-bar sidebar-nav-icon" aria-hidden="true"></i>
+                                <span>Forecasting</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                            <a href="#contact" class="sidebar-nav-link" data-section="contact" role="tab" aria-selected="false" aria-controls="contact">
+                                <i class="fas fa-envelope sidebar-nav-icon" aria-hidden="true"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main id="main-content" class="content" role="main" tabindex="-1">
+                <!-- Overview Section -->
+                <section id="overview" class="section active" role="tabpanel" aria-labelledby="overview-tab">
+                    <header class="section-header">
+                        <h2 id="overview-tab">Dashboard Overview</h2>
+                        <p>Key metrics and performance indicators for your business</p>
+                    </header>
+                    <div class="metrics">
+                        <div class="metric-card">
+                            <div class="metric-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="metric-info">
+                                <h3>Sales Trend</h3>
+                                <p>Monthly sales performance over time</p>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon"><i class="fas fa-tags"></i></div>
+                            <div class="metric-info">
+                                <h3>Category Sales</h3>
+                                <p>Performance by product category</p>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon"><i class="fas fa-globe"></i></div>
+                            <div class="metric-info">
+                                <h3>Regional Sales</h3>
+                                <p>Sales distribution by region</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Sales Trend</h3>
+                        <img src="results/sales_trend.png" alt="Sales Trend" class="chart-img">
+                        <div class="chart-description">
+                            <p>This chart shows the monthly sales trend over the past year. We can observe seasonal patterns and growth trends.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="sales" class="section">
+                    <div class="section-header">
+                        <h2>Sales Analysis</h2>
+                        <p>Detailed sales metrics and performance indicators</p>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-container half">
+                            <h3>Category Sales Distribution</h3>
+                            <img src="results/category_sales.png" alt="Category Sales" class="chart-img">
+                            <div class="chart-description">
+                                <p>Breakdown of sales by product category showing which categories generate the most revenue.</p>
+                            </div>
+                        </div>
+                        <div class="chart-container half">
+                            <h3>Regional Sales Performance</h3>
+                            <img src="results/region_sales.png" alt="Regional Sales" class="chart-img">
+                            <div class="chart-description">
+                                <p>Sales performance across different regions, highlighting top and bottom performing areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h3>RFM Analysis</h3>
+                        <img src="results/rfm_analysis.png" alt="RFM Analysis" class="chart-img">
+                        <div class="chart-description">
+                            <p>Recency, Frequency, and Monetary value analysis of customers to identify high-value segments.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="customers" class="section">
+                    <div class="section-header">
+                        <h2>Customer Insights</h2>
+                        <p>Analysis of customer behavior and segmentation</p>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-container half">
+                            <h3>Customer Segmentation</h3>
+                            <img src="results/customer_segments.png" alt="Customer Segments" class="chart-img">
+                            <div class="chart-description">
+                                <p>Clustering of customers into distinct groups based on purchasing behavior.</p>
+                            </div>
+                        </div>
+                        <div class="chart-container half">
+                            <h3>Churn Analysis</h3>
+                            <img src="results/churn_analysis.png" alt="Churn Analysis" class="chart-img">
+                            <div class="chart-description">
+                                <p>Analysis of customer churn rates and factors influencing customer retention.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-row">
+                        <div class="chart-container half">
+                            <h3>Marketing Segments</h3>
+                            <img src="results/extended/marketing_segments.png" alt="Marketing Segments" class="chart-img">
+                            <div class="chart-description">
+                                <p>Customer segments identified for targeted marketing campaigns.</p>
+                            </div>
+                        </div>
+                        <div class="chart-container half">
+                            <h3>Customer Lifetime Value</h3>
+                            <img src="results/extended/customer_ltv.png" alt="Customer LTV" class="chart-img">
+                            <div class="chart-description">
+                                <p>Projected lifetime value of customer segments to prioritize acquisition and retention efforts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="forecast" class="section">
+                    <div class="section-header">
+                        <h2>Sales Forecasting</h2>
+                        <p>Predictive analytics and future projections</p>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Sales Forecast</h3>
+                        <img src="results/extended/sales_forecast.png" alt="Sales Forecast" class="chart-img">
+                        <div class="chart-description">
+                            <p>Forecast of future sales based on historical data and trend analysis, including confidence intervals.</p>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Correlation Analysis</h3>
+                        <img src="results/extended/correlation_heatmap.png" alt="Correlation Heatmap" class="chart-img">
+                        <div class="chart-description">
+                            <p>Heatmap showing correlations between different business metrics to identify key relationships.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="section" role="tabpanel" aria-labelledby="contact-tab" hidden>
+                    <header class="section-header">
+                        <h2 id="contact-tab">Contact Me</h2>
+                        <p>Get in touch for collaborations or inquiries</p>
+                    </header>
+                    
+                    <div class="contact-container">
+                        <div class="contact-card">
+                            <div class="profile-image-container">
+                                <img src="https://github.com/krstnstc.png" alt="Kristine S. Sta. Cruz" class="profile-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/150/4361ee/ffffff?text=KS';">
+                            </div>
+                            <h3>Kristine S. Sta. Cruz</h3>
+                            <p class="contact-title">Business Analyst</p>
+                            
+                            <div class="contact-info">
+                                <a href="mailto:kristine.stacruz21@gmail.com" class="contact-link" aria-label="Email me at kristine.stacruz21@gmail.com">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>kristine.stacruz21@gmail.com</span>
+                                </a>
+                                
+                                <a href="https://github.com/krstnstc" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit my GitHub profile">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                    <span>github.com/krstnstc</span>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/kristinestc21/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Connect with me on LinkedIn">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                    <span>linkedin.com/in/kristinestc21</span>
+                                </a>
+                            </div>
+                            
+                            <div class="contact-availability">
+                                <i class="fas fa-circle status-available" aria-hidden="true"></i>
+                                <span>Available to work</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sales Analytics Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

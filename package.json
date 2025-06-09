@@ -1,0 +1,20 @@
+{
+  "name": "sales-dashboard",
+  "version": "1.0.0",
+  "description": "Sales Analytics Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krstnstc/sales-dashboard.git"
+  },
+  "keywords": ["dashboard", "analytics", "sales"],
+  "author": "Kristine S. Sta. Cruz",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
